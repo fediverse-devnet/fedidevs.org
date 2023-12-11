@@ -1,0 +1,13 @@
+{{ if .Get "style" }}
+<div class="slide-in-img slide-in-img-right" style="{{ .Get "style" }}">
+{{ else }}
+<div class="slide-in-img slide-in-img-right">
+{{ end }}
+{{ if .Get "href" }}
+ <a href="{{ .Get "href" }}">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+ </a>
+{{ else }}
+ <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+{{ end }}
+</div>

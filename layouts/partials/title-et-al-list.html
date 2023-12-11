@@ -1,0 +1,11 @@
+{{ partial "status.html" . }}
+{{ with .Params.date }}
+  <p class="date">{{ dateFormat "2006-01-02" . }}</p>
+{{ end }}
+  <h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+
+{{ with .Params.subtitle }}
+  <p class="subtitle">{{ . }}</p>
+{{   end }}
+
+{{ partial "categories.html" . }}

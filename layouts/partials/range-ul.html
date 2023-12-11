@@ -1,0 +1,8 @@
+{{ $p := . }}
+   <ul class="range-ul">
+{{ range $p }}
+    <li>
+     <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+{{ end }}
+   </ul>

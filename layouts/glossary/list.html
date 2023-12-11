@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+{{   if .Params.class }}
+<main class="{{ .Params.class }}">
+{{   else }}
+<main>
+{{   end }}
+
+{{   partial "breadcrumbs.html" . }}
+
+ <section>
+
+{{   partial "title-et-al-main.html" . }}
+
+{{   if .Content }}
+  <div class="content">
+{{     .Content }}
+  </div>
+{{   end }}
+
+{{   $p := ( .Paginate ( where ( where ( .RegularPages ) "Params.display" "!=" "hide" ) "Params.display" "!=" "false" ) 100 ) }}
+   <dl class="range-dl-summary">
+{{ range $p.Pages.ByTitle }}
+    <dt>
+     <a href="{{ .Permalink }}">{{ .Title }}</a>
+{{   if .Params.domain }}
+     <span class="domain">({{ .Params.domain }})</span>
+{{   end }}
+{{   if .Params.status }}
+     <span class="status">{{ .Params.status }}</span>
+{{   end }}
+    </dt>
+{{   if .Params.summary }}
+    <dd>
+{{     .Params.summary }}
+    </dd>
+{{   end }}
+{{ end }}
+   </dl>
+
+
+{{   partial "paginate-buttons-forward-backward.html" $p }}
+
+ </section>
+</main>
+{{ end }}
