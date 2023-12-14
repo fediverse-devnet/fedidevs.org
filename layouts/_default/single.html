@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{   if .Params.class }}
+<main class="{{ .Params.class }}">
+{{   else }}
+<main>
+{{   end }}
+
+{{   partial "breadcrumbs.html" . }}
+
+{{   if eq .Params.display false }}
+ <p>Post unavailable.</p>
+{{   else }}
+ <article>
+
+{{ partial "title-et-al-main.html" . }}
+
+  <div class="content">
+{{ .Content }}
+  </div>
+ </article>
+{{ end }}
+</main>
+{{ end }}

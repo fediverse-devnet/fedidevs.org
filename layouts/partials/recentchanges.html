@@ -1,0 +1,16 @@
+{{ $p := .Paginator }}
+{{ if $p.Pages }}
+  <div class="recentchanges">
+   <h2>Recent additions/changes</h2>
+
+   <ul class="recentchanges">
+{{     range $p.Pages.ByLastmod.Reverse }}
+    <li>
+     <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+{{     end }}
+   </ul>
+{{     partial "paginate-buttons.html" $p }}
+  </div>
+{{ end }}
+

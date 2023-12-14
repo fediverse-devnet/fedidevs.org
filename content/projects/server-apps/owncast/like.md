@@ -1,0 +1,5 @@
+---
+title: Like
+tags:
+  - Like
+---

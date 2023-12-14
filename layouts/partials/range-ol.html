@@ -1,0 +1,9 @@
+{{ $p := . }}
+   <ol class="range-posts">
+{{ range $p }}
+    <li>
+     <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+{{ end }}
+   </ol>
+

@@ -1,0 +1,279 @@
+:root {
+    --header-background-color: rgb( 36, 37, 38 );
+    --footer-background-color: rgb( 48, 56, 70 );
+
+    --base-font: system-ui;
+
+    --base-font-color: rgb( 227, 227, 227 );
+    --heading-font-color: rgb( 227, 227, 227 );
+
+    --header-font-size: 16px;
+
+    --breadcrumb-font-size: 12px;
+
+    --href-color: rgb( 37, 194, 160 );
+
+    --background-color: rgb( 27, 27, 29 );
+
+    --table-border-color: #606770;
+    --table-background-color: var( --background-color );
+    --table-header-background-color: #ffffff08;
+    --table-stripe-background-color: #ffffff08;
+
+    --code-font: 16px/1.4 "SFMono-Regular", Menlo, Monaco;
+    --code-background: rgb( 40, 42, 54 );
+
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var( --background-color );
+    color: var( --base-font-color );
+    font-family: var( --base-font );
+    line-height: 1.6;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+header {
+    margin: 0 0 50px 0;
+    padding: 0;
+    background: var( --header-background-color );
+}
+
+footer {
+    clear: both;
+    margin: 50px 0 0 0;
+    padding: 1px 0; /* otherwise Chrome will collapse the enclosing container */
+    background: var( --footer-background-color );
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--heading-font-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+a.ext:after {
+    content: url( "/assets/ext.svg" );
+    margin-left: 1ex;
+}
+a:hover {
+    color: var( --href-color );
+}
+
+header div.title,
+header div.logo {
+    margin: 12px 20px;
+    font-weight: 700;
+}
+header img.logo {
+    vertical-align: middle;
+    height: 32px;
+}
+
+header nav.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    font-size: var( --header-font-size );
+    font-weight: 500;
+}
+
+header nav.menu li {
+    display: inline-block;
+}
+header > div.container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header div.nav-tagline {
+    flex-grow: 1;
+}
+
+h1 a,
+h2 a,
+h3 a,
+header a,
+footer a {
+    color: var( --base-font-color );
+}
+a {
+    color: var( --href-color );
+    text-decoration: none;
+}
+
+header > div.container,
+footer > div.container,
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+main {
+    min-height: min( 600px, 60vh );
+}
+
+footer {
+    padding-left: 20%;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-left: 0;
+    list-style: none;
+}
+
+nav#breadcrumbnav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: var( --breadcrumb-font-size );
+}
+nav#breadcrumbnav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+nav#breadcrumbnav li + li::before {
+    content: "\00BB";
+}
+nav#breadcrumbnav li.path a {
+    color: var( --base-font-color );
+}
+
+p.main.author,
+p.main.source {
+    display: none;
+}
+
+table {
+    background: var( --table-background-color );
+}
+td,
+th {
+    padding: 1.5ex;
+    border: 1px solid var( --table-border-color );
+}
+
+thead + tbody {
+    border-top: 2px solid var( --table-border-color );
+}
+thead tr {
+    background: var( --table-header-background-color );
+}
+tbody tr:nth-child(2n) {
+    background: var( --table-stripe-background-color );
+}
+pre {
+    font: var( --code-font );
+    background: var( --code-background );
+    padding: 1em;
+    overflow-x: auto;
+}
+/*
+
+
+ul.range-posts {
+    margin: 0;
+    padding: 0;
+}
+
+ul.range-posts > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p.date + h1,
+p.date + a h1,
+p.date + h2,
+p.date + a h2 {
+    margin-top: 0.3ex;
+    margin-bottom: 1.2em;
+}
+p.date {
+    margin: 1.2em 0 0 0;
+}
+
+ul.pager {
+    padding: 0;
+    text-align: center;
+}
+ul.pager li {
+    padding: 0;
+    display: inline;
+    list-style-type: none;
+}
+
+div.slide-in-img {
+    max-width: 25%;
+}
+div.slide-in-img img {
+    width: 100%;
+}
+div.slide-in-img-left {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+div.slide-in-img-right {
+    float: right;
+    margin: 0 0 30px 30px;
+}
+
+
+div.admonition,
+div.status {
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+}
+
+div.admonition p.admonition-title {
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+}
+div.admonition p.admonition-title:after {
+    content: ":"
+}
+
+div.admonition div.admonition.warning {
+    background: #fff0f0;
+    border-color: #ff8080;
+}
+
+
+table.people td,
+table.people th {
+  vertical-align: top;
+}
+
+
+
+
+
+footer {
+    background: #f5f5f5;
+    border-top: #eaeaea solid 1px;
+}

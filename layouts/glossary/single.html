@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+{{   if .Params.class }}
+<main class="{{ .Params.class }}">
+{{   else }}
+<main>
+{{   end }}
+
+{{   partial "breadcrumbs.html" . }}
+
+{{   if eq .Params.display false }}
+ <p>Post unavailable.</p>
+{{   else }}
+ <article>
+
+{{ partial "status.html" . }}
+{{ with .Params.date }}
+  <p class="date main">{{ dateFormat "2006-01-02" . }}</p>
+{{ end }}
+  <h1 class="title main"><a href="{{ .RelPermalink }}">Glossary term: {{ .Title }}</a></h1>
+
+{{ with .Params.subtitle }}
+  <p class="subtitle main">{{ . }}</p>
+{{   end }}
+
+{{ with .Site.Params.Author.Name }}
+  <p class="author main">{{ . }}</p>
+{{   end }}
+  <p class="source main">{{ .Page.Permalink }}</p>
+
+{{ partial "categories.html" . }}
+
+  <div class="content">
+{{ .Content }}
+  </div>
+{{ partial "discuss.html" . }}
+{{ if or .Params.seealsoweb .Params.seealsoterm }}
+  <div class="seealso">
+   <h3>See also:</h3>
+   <ul>
+{{   $s := .Site }}
+{{   range $tag := .Params.seealsoterm }}
+{{     with $s.GetPage ( printf "/glossary/%s.md" ( $tag )) -}}
+
+    <li><a href="/glossary/{{ lower $tag }}/">{{ .Title }}</a></li>
+{{     else }}
+    <li><span class="undef">{{ $tag }}</span></li>
+{{     end }}
+{{   end }}
+{{   range $name, $url := .Params.seealsoweb }}
+    <li><a href="{{ $url }}">{{ $name }}</a></li>
+{{   end }}
+   </ul>
+{{ end }}
+  </div>
+ </article>
+{{ end }}
+</main>
+{{ end }}
