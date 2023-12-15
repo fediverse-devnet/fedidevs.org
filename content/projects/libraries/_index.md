@@ -1,6 +1,6 @@
 ---
 title: Libraries
-show: hide
+weight: 20
 ---
 
 None currently.
