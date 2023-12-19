@@ -1,6 +1,6 @@
 ---
 title: Mobile apps
-show: hide
+weight: 20
 ---
 
 None currently.

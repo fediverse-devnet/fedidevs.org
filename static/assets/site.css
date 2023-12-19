@@ -62,9 +62,11 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 3rem;
+    line-height: 125%;
 }
 h2 {
     font-size: 2rem;
+    line-height: 125%;
 }
 
 a.ext:after {
@@ -73,6 +75,7 @@ a.ext:after {
 }
 a:hover {
     color: var( --href-color );
+    text-decoration: underline;
 }
 
 header div.title,
@@ -190,90 +193,69 @@ pre {
     padding: 1em;
     overflow-x: auto;
 }
-/*
 
-
-ul.range-posts {
-    margin: 0;
-    padding: 0;
-}
-
-ul.range-posts > li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-p.date + h1,
-p.date + a h1,
-p.date + h2,
-p.date + a h2 {
-    margin-top: 0.3ex;
-    margin-bottom: 1.2em;
-}
-p.date {
-    margin: 1.2em 0 0 0;
-}
-
-ul.pager {
-    padding: 0;
-    text-align: center;
-}
-ul.pager li {
-    padding: 0;
-    display: inline;
-    list-style-type: none;
-}
-
-div.slide-in-img {
-    max-width: 25%;
-}
-div.slide-in-img img {
-    width: 100%;
-}
-div.slide-in-img-left {
-    float: left;
-    margin: 0 30px 30px 0;
-}
-div.slide-in-img-right {
+aside.toc {
     float: right;
-    margin: 0 0 30px 30px;
+    width: 220px;
+    margin: 0 0 20px 20px;
+    padding: 0 0 8px 16px;
+    border-left: var( --table-border-color ) 1px solid;
+    font-size: 90%;
 }
 
-
-div.admonition,
-div.status {
-    margin: 10px 0px;
-    padding: 10px;
-    border: 1px solid #808080;
-    border-radius: 10px;
+aside.toc * {
+    line-height: 120%;
+}
+aside.toc a {
+    color: inherit;
+}
+aside.toc a:hover {
+    color: var( --href-color );
+}
+aside.toc h1 {
+    margin: 1ex auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 90%;
 }
 
-div.admonition p.admonition-title {
-    float: left;
+aside.toc ol {
+    margin: 0;
+    padding: 0;
+}
+aside.toc li {
+    margin: 8px 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside.toc > ol > li > a {
+    font-weight: 500;
+}
+
+aside.toc li li {
+    margin-left: 2ex;
+}
+
+#toc ol.toc,
+#toc li.toc {
+    display: none;
+}
+#toc ol.toc.toc-current-path,
+#toc li.toc.toc-current-path,
+#toc #toc-current {
+    display: block;
+}
+
+#toc ol.toc.toc-current-path > li,
+#toc-current ol.toc,
+#toc-current li.toc,
+#toc > li.toc {
+    display: block;
+}
+#toc-current > a {
     font-weight: bold;
-    margin-right: 10px;
 }
-div.admonition p.admonition-title:after {
-    content: ":"
-}
-
-div.admonition div.admonition.warning {
-    background: #fff0f0;
-    border-color: #ff8080;
-}
-
-
-table.people td,
-table.people th {
-  vertical-align: top;
-}
-
-
-
-
-
-footer {
-    background: #f5f5f5;
-    border-top: #eaeaea solid 1px;
+#toc-current > ol.toc ol.toc {
+    display: none;
 }
