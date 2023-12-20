@@ -1,8 +1,6 @@
 ---
 id: remove
 title: Remove
-sidebar_label: Remove
-sidebar_position: 9
 tags:
   - Remove
 ---

@@ -1,8 +1,6 @@
 ---
 id: offer
 title: Offer
-sidebar_label: Offer
-sidebar_position: 8
 tags:
   - Offer
 ---

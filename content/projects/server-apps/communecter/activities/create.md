@@ -1,8 +1,6 @@
 ---
 id: create
 title: Create
-sidebar_label: Create
-sidebar_position: 2
 tags:
   - Create
 ---

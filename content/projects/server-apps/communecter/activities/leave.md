@@ -1,8 +1,6 @@
 ---
 id: leave
 title: Leave
-sidebar_label: Leave
-sidebar_position: 7
 tags:
   - Leave
 ---

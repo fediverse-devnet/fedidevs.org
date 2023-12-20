@@ -1,8 +1,6 @@
 ---
 id: invite
 title: Invite
-sidebar_label: Invite
-sidebar_position: 5
 tags:
   - invite
 ---

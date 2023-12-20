@@ -1,8 +1,6 @@
 ---
 id: join
 title: Join
-sidebar_label: Join
-sidebar_position: 6
 tags:
   - join
 ---

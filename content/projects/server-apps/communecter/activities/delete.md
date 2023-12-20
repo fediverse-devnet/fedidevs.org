@@ -1,8 +1,6 @@
 ---
 id: delete
 title: Delete
-sidebar_label: Delete
-sidebar_position: 3
 tags:
   - Delete
 ---

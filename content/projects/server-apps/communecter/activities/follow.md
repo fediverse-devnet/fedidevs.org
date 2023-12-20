@@ -1,8 +1,6 @@
 ---
 id: follow
 title: Follow
-sidebar_label: Follow
-sidebar_position: 4
 tags:
   - follow
 ---

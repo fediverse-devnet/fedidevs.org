@@ -1,8 +1,6 @@
 ---
 id: reject
 title: Reject
-sidebar_label: Reject
-sidebar_position: 9
 tags:
   - Reject
 ---

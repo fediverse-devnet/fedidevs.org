@@ -1,8 +1,6 @@
 ---
 id: update
 title: Update
-sidebar_label: Update
-sidebar_position: 11
 tags:
   - update
 ---

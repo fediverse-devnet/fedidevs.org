@@ -1,8 +1,6 @@
 ---
 id: undo
 title: Undo
-sidebar_label: Undo
-sidebar_position: 10
 tags:
   - Undo
 ---

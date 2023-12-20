@@ -1,8 +1,6 @@
 ---
 id: accept
 title: Accept
-sidebar_label: Accept
-sidebar_position: 1
 tags:
   - Accept
 ---
