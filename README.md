@@ -1,4 +1,6 @@
-This will become the (new) website [fedidevs.org](https://fedidevs.org/).
+## Fedidevs.org
+
+This is the content of [fedidevs.org](https://fedidevs.org/).
 
 It is built with the [Hugo](https://gohugo.io/) static site generator, plus some
 Python scripts that generate a few of the pages.
@@ -15,7 +17,7 @@ $ brew install git-lfs
 $ git lfs install
 ```
 
-Install Hugo:
+Install Hugo, e.g. on the Mac:
 
 ```
 $ brew install hugo
@@ -61,38 +63,28 @@ By and large, there are two kinds of files there:
 
 This describes files below ``content/``.
 
-Front page:
-: Welcome, overview
+* Front page: Welcome, overview
 
-``best-practices/``:
-: A collection of best practices that we consider useful. Not standards, but more
+* ``best-practices/``: A collection of best practices that we consider useful. Not standards, but more
   tips and tricks how to best apply the standards to solve certain problems.
 
-``notes/``:
-: Notes from meetings
+* ``notes/``: Notes from meetings
 
-``projects/``:
-: Contains all information about Fediverse software projects, further subdivided
+* ``projects/``: Contains all information about Fediverse software projects, further subdivided
   by category.
 
-``projects/libraries/``:
-: Information about Fediverse-related software libraries.
+* ``projects/libraries/``: Information about Fediverse-related software libraries.
 
-``projects/server-apps/``:
-: Information about Fediverse server-side applications.
+* ``projects/server-apps/``: Information about Fediverse server-side applications.
 
-``projects/mobile-apps/``:
-: Information about Fediverse mobile apps.
+* ``projects/mobile-apps/``: Information about Fediverse mobile apps.
 
-``reference/``:
-: Collection of reference information that is useful for development, such as an
+* ``reference/`` Collection of reference information that is useful for development, such as an
   overview over how the ActivityPub actor files look for different server apps.
   Much content here is generated.
 
 ## Other directories
 
-``static/``:
-: Static assets, such as images.
+* ``static/``: Static assets, such as images.
 
-``scripts/``:
-: Scripts that generate content for the site.
+* ``scripts/``: Scripts that generate content for the site.
