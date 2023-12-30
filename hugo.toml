@@ -1,0 +1,22 @@
+baseURL = "https://fedidevs.org"
+title = "Fediverse Developer Network"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+disableKinds = [ "taxonomy" ]
+enableRobotsTXT = true
+enableGitInfo = true
+
+[services.rss]
+limit = 42
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[params.author]
+name = "Fediverse Developer Network"
+
+[sitemap]
+  filename = "sitemap.xml"
