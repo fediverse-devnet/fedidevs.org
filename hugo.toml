@@ -19,4 +19,4 @@ noClasses = false
 name = "Fediverse Developer Network"
 
 [sitemap]
-  filename = "sitemap.xml"
+filename = "sitemap.xml"
