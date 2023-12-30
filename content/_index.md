@@ -6,7 +6,7 @@ layout: front
 
 ## Fediverse Developer Network
 
-<img src="/assets/fedidevs-concept.svg"/>
+<img src="/assets/fedidevs-concept.svg" alt="Fedidevs Concept"/>
 
 ### What is it?
 
@@ -28,4 +28,4 @@ layout: front
 
 ### Follow us in the Fediverse
 
-- [@fedidevs@mastodon.social](https://mastodon.social/@fedidevs)
+- <a rel="me" href="https://mastodon.social/@fedidevs">@fedidevs@mastodon.social</a>
