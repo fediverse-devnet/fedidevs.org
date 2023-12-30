@@ -1,52 +1,50 @@
 {
-    "Mastodon" : {
-        "@gargron@mastodon.social" : {}
+    "Mastodon": {
+        "@gargron@mastodon.social": {}
     },
-    "PeerTube" : {
-        "@peertube@framapiaf.org" : {}
+    "PeerTube": {
+        "@peertube@framapiaf.org": {}
     },
-    "Calckey" : {
-        "@kainoa@calckey.social" : {}
+    "Firefish": {
+        "@kainoa@firefish.social": {}
     },
-    "Misskey" : {
-        "https://misskey.io/@syuilo" : {}
+    "Misskey": {
+        "https://misskey.io/@syuilo": {}
     },
-    "Streams" : {
-        "@mike@macgirvin.com" : {}
+    "Streams": {
+        "@mike@macgirvin.com": {}
     },
-    "Hubzilla" : {
-        "@contribute@hubzilla.org" : {}
+    "Hubzilla": {
+        "@contribute@hubzilla.org": {}
     },
-    "GNU Social" : {
-        "@administrator@gnusocial.net" : {}
+    "GNU Social": {
+        "@administrator@gnusocial.net": {}
     },
-    "Pleroma" : {
-        "@karolat@stereophonic.space" :  {}
+    "Pleroma": {
+        "@karolat@stereophonic.space": {}
     },
-    "Pixelfed" : {
-        "@dansup@pixelfed.social" : {}
+    "Pixelfed": {
+        "@dansup@pixelfed.social": {}
     },
-    "Friendica" : {
-        "@tobias@friendi.ca" : {}
+    "Friendica": {
+        "@tobias@friendi.ca": {}
     },
-    "Funkwhale" : {
-        "@Greensky@open.audio" : {}
+    "Funkwhale": {
+        "@Greensky@open.audio": {}
     },
-    "WriteFreely" : {
-        "@matt@write.as" : {}
+    "WriteFreely": {
+        "@matt@write.as": {}
     },
-    "Plume" : {
-        "@actapopuli@fediverse.blog" : {}
+    "Plume": {
+        "@actapopuli@fediverse.blog": {}
     },
-    "Mobilizon" : {
-        "@framasoft@mobilizon.fr" : {}
+    "Mobilizon": {
+        "@framasoft@mobilizon.fr": {}
     },
-    "Lemmy" : {
-        "@lemmy_support@lemmy.ml" : {}
+    "Lemmy": {
+        "@lemmy_support@lemmy.ml": {}
     },
-    "Micro.blog" : {
-        "@manton@manton.org" : {}
+    "Micro.blog": {
+        "@manton@manton.org": {}
     }
-
 }
-

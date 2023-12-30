@@ -3,7 +3,7 @@
 #
 
 PYTHON=python3
-OUTDIR=../docs/reference
+OUTDIR=../content/reference
 
 default : all
 
