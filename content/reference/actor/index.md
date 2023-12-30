@@ -3,10 +3,10 @@ title: Actor sample files
 description: A selection of Actor files as produced by common Fediverse apps
 ---
 
-As of 2023-06-01 20:52:33 UTC. To regenerate, run `make`
+As of 2023-12-30 15:59:05 UTC. To regenerate, run `make`
 in directory `scripts`.
 
-## App: Mastodon, handle `@gargron@mastodon.social`
+## App: Mastodon, handle ``@gargron@mastodon.social``
 
 Endpoint: https://mastodon.social/users/Gargron
 
@@ -65,6 +65,8 @@ Endpoint: https://mastodon.social/users/Gargron
       "messageType": "toot:messageType",
       "cipherText": "toot:cipherText",
       "suspended": "toot:suspended",
+      "memorial": "toot:memorial",
+      "indexable": "toot:indexable",
       "focalPoint": {
         "@container": "@list",
         "@id": "toot:focalPoint"
@@ -81,11 +83,13 @@ Endpoint: https://mastodon.social/users/Gargron
   "featuredTags": "https://mastodon.social/users/Gargron/collections/tags",
   "preferredUsername": "Gargron",
   "name": "Eugen Rochko",
-  "summary": "<p>Founder, CEO and lead developer <span class=\"h-card\"><a href=\"https://mastodon.social/@Mastodon\" class=\"u-url mention\">@<span>Mastodon</span></a></span>, Germany.</p>",
+  "summary": "<p>Founder of <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@Mastodon\" class=\"u-url mention\">@<span>Mastodon</span></a></span>. Film photography, prog metal, Dota 2.</p>",
   "url": "https://mastodon.social/@Gargron",
   "manuallyApprovesFollowers": false,
   "discoverable": true,
+  "indexable": true,
   "published": "2016-03-16T00:00:00Z",
+  "memorial": false,
   "devices": "https://mastodon.social/users/Gargron/collections/devices",
   "alsoKnownAs": [
     "https://tooting.ai/users/Gargron"
@@ -100,12 +104,12 @@ Endpoint: https://mastodon.social/users/Gargron
     {
       "type": "PropertyValue",
       "name": "Patreon",
-      "value": "<a href=\"https://www.patreon.com/mastodon\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"><span class=\"invisible\">https://www.</span><span class=\"\">patreon.com/mastodon</span><span class=\"invisible\"></span></a>"
+      "value": "<a href=\"https://www.patreon.com/mastodon\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">patreon.com/mastodon</span><span class=\"invisible\"></span></a>"
     },
     {
       "type": "PropertyValue",
       "name": "GitHub",
-      "value": "<a href=\"https://github.com/Gargron\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"><span class=\"invisible\">https://</span><span class=\"\">github.com/Gargron</span><span class=\"invisible\"></span></a>"
+      "value": "<a href=\"https://github.com/Gargron\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/Gargron</span><span class=\"invisible\"></span></a>"
     }
   ],
   "endpoints": {
@@ -114,7 +118,7 @@ Endpoint: https://mastodon.social/users/Gargron
   "icon": {
     "type": "Image",
     "mediaType": "image/png",
-    "url": "https://files.mastodon.social/accounts/avatars/000/000/001/original/35bbc8bd5d97cff9.png"
+    "url": "https://files.mastodon.social/accounts/avatars/000/000/001/original/1a8137d3b26704e0.png"
   },
   "image": {
     "type": "Image",
@@ -124,7 +128,7 @@ Endpoint: https://mastodon.social/users/Gargron
 }
 ```
 
-## App: PeerTube, handle `@peertube@framapiaf.org`
+## App: PeerTube, handle ``@peertube@framapiaf.org``
 
 Endpoint: https://framapiaf.org/users/peertube
 
@@ -183,6 +187,8 @@ Endpoint: https://framapiaf.org/users/peertube
       "messageType": "toot:messageType",
       "cipherText": "toot:cipherText",
       "suspended": "toot:suspended",
+      "memorial": "toot:memorial",
+      "indexable": "toot:indexable",
       "focalPoint": {
         "@container": "@list",
         "@id": "toot:focalPoint"
@@ -199,11 +205,13 @@ Endpoint: https://framapiaf.org/users/peertube
   "featuredTags": "https://framapiaf.org/users/peertube/collections/tags",
   "preferredUsername": "peertube",
   "name": "PeerTube",
-  "summary": "<p>PeerTube Software Official Account - No support here // Compte officiel du logiciel PeerTube (anim\u00e9 par Framasoft). Nous ne faisons pas de support depuis ce compte. Merci de contacter l&#39;administrateur\u22c5ice de l&#39;instance concern\u00e9e ou   de vous rendre sur <a href=\"https://framacolibri.org/c/peertube\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span class=\"invisible\">https://</span><span class=\"\">framacolibri.org/c/peertube</span><span class=\"invisible\"></span></a></p>",
+  "summary": "<p>PeerTube Software Official Account - No support here // Compte officiel du logiciel PeerTube (anim\u00e9 par Framasoft). Nous ne faisons pas de support depuis ce compte. Merci de contacter l&#39;administrateur\u22c5ice de l&#39;instance concern\u00e9e ou   de vous rendre sur <a href=\"https://framacolibri.org/c/peertube\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">framacolibri.org/c/peertube</span><span class=\"invisible\"></span></a></p>",
   "url": "https://framapiaf.org/@peertube",
   "manuallyApprovesFollowers": false,
   "discoverable": false,
+  "indexable": false,
   "published": "2019-10-01T00:00:00Z",
+  "memorial": false,
   "devices": "https://framapiaf.org/users/peertube/collections/devices",
   "publicKey": {
     "id": "https://framapiaf.org/users/peertube#main-key",
@@ -228,101 +236,8 @@ Endpoint: https://framapiaf.org/users/peertube
 }
 ```
 
-## App: Calckey, handle `@kainoa@calckey.social`
-
-Endpoint: https://calckey.social/users/9aprgabaeb
-
-```js
-{
-  "@context": [
-    "https://www.w3.org/ns/activitystreams",
-    "https://w3id.org/security/v1",
-    {
-      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
-      "movedToUri": "as:movedTo",
-      "sensitive": "as:sensitive",
-      "Hashtag": "as:Hashtag",
-      "quoteUri": "fedibird:quoteUri",
-      "quoteUrl": "as:quoteUrl",
-      "toot": "http://joinmastodon.org/ns#",
-      "Emoji": "toot:Emoji",
-      "featured": "toot:featured",
-      "discoverable": "toot:discoverable",
-      "schema": "http://schema.org#",
-      "PropertyValue": "schema:PropertyValue",
-      "value": "schema:value",
-      "misskey": "https://misskey-hub.net/ns#",
-      "_misskey_content": "misskey:_misskey_content",
-      "_misskey_quote": "misskey:_misskey_quote",
-      "_misskey_reaction": "misskey:_misskey_reaction",
-      "_misskey_votes": "misskey:_misskey_votes",
-      "_misskey_talk": "misskey:_misskey_talk",
-      "isCat": "misskey:isCat",
-      "fedibird": "http://fedibird.com/ns#",
-      "vcard": "http://www.w3.org/2006/vcard/ns#"
-    }
-  ],
-  "type": "Person",
-  "id": "https://calckey.social/users/9aprgabaeb",
-  "inbox": "https://calckey.social/users/9aprgabaeb/inbox",
-  "outbox": "https://calckey.social/users/9aprgabaeb/outbox",
-  "followers": "https://calckey.social/users/9aprgabaeb/followers",
-  "following": "https://calckey.social/users/9aprgabaeb/following",
-  "featured": "https://calckey.social/users/9aprgabaeb/collections/featured",
-  "sharedInbox": "https://calckey.social/inbox",
-  "endpoints": {
-    "sharedInbox": "https://calckey.social/inbox"
-  },
-  "url": "https://calckey.social/@kainoa",
-  "preferredUsername": "kainoa",
-  "name": "Kainoa ",
-  "summary": "<p><span>I made </span><a href=\"https://calckey.social/tags/Calckey\" rel=\"tag\">#Calckey</a><span>, I guess<br>UC Irvine sophomore<br>Gay, Nonbinary, Jewish, swag</span></p>",
-  "icon": {
-    "type": "Image",
-    "url": "https://bunnyt1c.s3.us-east-005.backblazeb2.com/calckeysoc/9dc7bdd5-d8e3-48a6-9557-c21a9bec8c79.jpg",
-    "sensitive": false,
-    "name": null
-  },
-  "image": {
-    "type": "Image",
-    "url": "https://bunnyt1c.s3.us-east-005.backblazeb2.com/calckeysoc/e8d8ad5a-2a68-4f05-91ea-266394a5f414.png",
-    "sensitive": false,
-    "name": null
-  },
-  "tag": [
-    {
-      "type": "Hashtag",
-      "href": "https://calckey.social/tags/calckey",
-      "name": "#calckey"
-    }
-  ],
-  "manuallyApprovesFollowers": false,
-  "discoverable": true,
-  "publicKey": {
-    "id": "https://calckey.social/users/9aprgabaeb#main-key",
-    "type": "Key",
-    "owner": "https://calckey.social/users/9aprgabaeb",
-    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAynO2VYTjxvlNajw0Jli4\n0m45BzNXMTV7ApWB7T0rKl0yOH6R/OVEGseuE1el8A+ujG5yprnFC5vk8EV+xMt0\nWjolRoxzC3dtulT1sgZIRU7flICqikundUfk35vguY2P56bKOUoop5xRWTm2Qola\nYEdr5TegfjLVjaWtlieQ24zEzSzJGrFXFRVIljhjSgR8EUs5GCJE3X4zzAbWe/cp\ngg/7aX8+pm2DuH9WcHTLKeu6AyLZUHo0V7KwjkbzuFHHozMhq7evkTsOFyTZJtLI\no6j3CXzoIkqjlHrJpJ0+CdGShUnfHMROshZHAbwJC4nMDNJ7dZwNdaf+dr9gv8RK\npT3Akx/F/2NgOQmia4BqENK3d0U8FjCDqOnVrsGK5P8TojnDb1g+06bpigKByZJK\ns7bzPAQE2DFTZwvxcDZwll0KWtHcdHw8pefLMYt4J12dRzFVauaNZT9HOC926unv\nvIQoeynA5n0bnOrffXlerKuu1jrjVLl4UsKwmm+gACxWxlKqws6//N7pulYGfLEQ\nnEkFmAfYfnQPMjcGczdTWiAQV7ZsR/W2kgiDN+Ps6uBjSIPcqteO7cthXCtBvEue\nErfMDqazafxjHsHWPCwlLHvm0NSr2Y/s1LzmWFQa+UZMaVD0eL/wLlFDgcSCUw8N\nDBbmpdgQnYz4EJZ906eVHBcCAwEAAQ==\n-----END PUBLIC KEY-----\n"
-  },
-  "isCat": false,
-  "attachment": [
-    {
-      "type": "PropertyValue",
-      "name": "Pronouns",
-      "value": "They/He (https://en.pronouns.page/@that1calculator)"
-    },
-    {
-      "type": "PropertyValue",
-      "name": "Matrix",
-      "value": "t1c:matrix.fedibird.com"
-    }
-  ],
-  "vcard:bday": "2003-06-25",
-  "vcard:Address": "Irvine, CA"
-}
-```
-
-## App: Misskey, handle `https://misskey.io/@syuilo`
+## App: Firefish, handle ``@kainoa@firefish.social``
+## App: Misskey, handle ``https://misskey.io/@syuilo``
 
 Endpoint: https://misskey.io/users/7rkrarq81i
 
@@ -348,6 +263,7 @@ Endpoint: https://misskey.io/users/7rkrarq81i
       "_misskey_quote": "misskey:_misskey_quote",
       "_misskey_reaction": "misskey:_misskey_reaction",
       "_misskey_votes": "misskey:_misskey_votes",
+      "_misskey_summary": "misskey:_misskey_summary",
       "isCat": "misskey:isCat",
       "vcard": "http://www.w3.org/2006/vcard/ns#"
     }
@@ -365,8 +281,9 @@ Endpoint: https://misskey.io/users/7rkrarq81i
   },
   "url": "https://misskey.io/@syuilo",
   "preferredUsername": "syuilo",
-  "name": "\u3057\u3085\u3044\u308d",
-  "summary": "<p><span>Misskey\u3092\u958b\u767a\u3057\u3066\u3044\u308b\u4eba<br><br></span><a href=\"https://misskey.io/tags/misskey\" rel=\"tag\">#misskey</a><span> </span><a href=\"https://misskey.io/tags/\u85cd\u3061\u3083\u30d5\u30a1\u30f3\u30af\u30e9\u30d6\" rel=\"tag\">#\u85cd\u3061\u3083\u30d5\u30a1\u30f3\u30af\u30e9\u30d6</a><span> </span><a href=\"https://misskey.io/tags/\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\" rel=\"tag\">#\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc</a><span><br></span></p>",
+  "name": ":peroro_sama:\u3057\u3085\u3044\u308d:peroro_sama:",
+  "summary": "<p><span>Misskey\u3092\u958b\u767a\u3057\u3066\u3044\u308b\u4eba<br><br></span><a href=\"https://misskey.io/tags/misskey\" rel=\"tag\">#misskey</a><span> </span><a href=\"https://misskey.io/tags/\u85cd\u3061\u3083\u30d5\u30a1\u30f3\u30af\u30e9\u30d6\" rel=\"tag\">#\u85cd\u3061\u3083\u30d5\u30a1\u30f3\u30af\u30e9\u30d6</a><span> </span><a href=\"https://misskey.io/tags/\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\" rel=\"tag\">#\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc</a><span> </span><a href=\"https://misskey.io/tags/VisualSnowSyndrome\" rel=\"tag\">#VisualSnowSyndrome</a></p>",
+  "_misskey_summary": "Misskey\u3092\u958b\u767a\u3057\u3066\u3044\u308b\u4eba\n\n#misskey #\u85cd\u3061\u3083\u30d5\u30a1\u30f3\u30af\u30e9\u30d6 #\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc #VisualSnowSyndrome",
   "icon": {
     "type": "Image",
     "url": "https://s3.arkjp.net/misskey/webpublic-b2dc591e-58b6-4df7-b7c9-1cba199f6619.png",
@@ -381,6 +298,17 @@ Endpoint: https://misskey.io/users/7rkrarq81i
   },
   "tag": [
     {
+      "id": "https://misskey.io/emojis/peroro_sama",
+      "type": "Emoji",
+      "name": ":peroro_sama:",
+      "updated": "2023-07-31T11:34:35.167Z",
+      "icon": {
+        "type": "Image",
+        "mediaType": "image/gif",
+        "url": "https://s3.arkjp.net/misskey/761a28c4-6702-4844-a63b-c6b4a345e981.gif"
+      }
+    },
+    {
       "type": "Hashtag",
       "href": "https://misskey.io/tags/misskey",
       "name": "#misskey"
@@ -394,6 +322,11 @@ Endpoint: https://misskey.io/users/7rkrarq81i
       "type": "Hashtag",
       "href": "https://misskey.io/tags/%E3%82%8F%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC%E3%83%BC",
       "name": "#\u308f\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc\u30fc"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://misskey.io/tags/visualsnowsyndrome",
+      "name": "#visualsnowsyndrome"
     }
   ],
   "manuallyApprovesFollowers": false,
@@ -405,12 +338,19 @@ Endpoint: https://misskey.io/users/7rkrarq81i
     "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5HmF4+D3i7XK4g90x16r\nFf0oMHwTWqXM8oxlwa2d1NUivcGByZdjNlK2zMC/RkXDing5VwgFC3foQnhv6drz\nSKJ8fqQDB97iuz+AIIcXKKt6Y6N7nJgN+LIOIhgppEjxHsaaS3W8v9vFdecyU3tI\nnRNHt7LBGssaZZfOB/ZAiED1yUAqt4NGxvY0gKl4+/GK9k+cHBPQTZCAuo/Vb8tq\n9L1yZcLz8JbZRC74OZaDBbcD9cHudHBq6evd0VYC/ybHKS+jN0eKoNwnI2jQf/Zv\nJK2kbXQPdPwmPeJgrqZ4Qyw/hFRT9sC5CRkWRaCc0dKfAjT6PHJlyaCbGaXwEM7f\nt1fhr5STRG/22XKGqGBPkXaaAKyClng80WDTcUF4FU87Ht2P4TcXhXOYXcOfw2q3\nNpk4p9ky1Pe7hyFRtcduaJCgKbMVt+PqyYZPoI9INpRxFMymon6nt7JqLFf2vh9B\n8sAeF8dFZeW4gevOpUk51XPDoHIo2RNmMQRufAMS2Ow8f6kg3c+GYamdJ2Y8onVW\nxbyZE6kswMkTeCK3w3Vk5J/fBxmnvqLRHnyyHnWH3CkHIWf2iY1EUARrmHdR7rQj\nzT3SRdGLVu3mqpZ0ruA2tbm/HuNrzfuROxMDlItAZbmJpuSie0vJJXvfGOcKjXYF\nU6ev3zq8cTQkP0D0Ov8LF60CAwEAAQ==\n-----END PUBLIC KEY-----\n"
   },
   "isCat": true,
+  "attachment": [
+    {
+      "type": "PropertyValue",
+      "name": "\u5199\u771f\u96c6",
+      "value": "<a href=\"https://syuilo.github.io/photos.html\" rel=\"me nofollow noopener\" target=\"_blank\">https://syuilo.github.io/photos.html</a>"
+    }
+  ],
   "vcard:bday": "1997-12-06",
   "vcard:Address": "Japan"
 }
 ```
 
-## App: Streams, handle `@mike@macgirvin.com`
+## App: Streams, handle ``@mike@macgirvin.com``
 
 Endpoint: https://macgirvin.com/channel/mike
 
@@ -419,6 +359,8 @@ Endpoint: https://macgirvin.com/channel/mike
   "@context": [
     "https://www.w3.org/ns/activitystreams",
     "https://w3id.org/security/v1",
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/multikey/v1",
     {
       "nomad": "https://macgirvin.com/apschema#",
       "toot": "http://joinmastodon.org/ns#",
@@ -428,12 +370,13 @@ Endpoint: https://macgirvin.com/channel/mike
       "oauthRegistrationEndpoint": "litepub:oauthRegistrationEndpoint",
       "sensitive": "as:sensitive",
       "movedTo": "as:movedTo",
-      "alsoKnownAs": "as:alsoKnownAs",
       "EmojiReact": "as:EmojiReact",
       "discoverable": "toot:discoverable",
+      "indexable": "toot:indexable",
       "wall": "sm:wall",
       "capabilities": "litepub:capabilities",
       "acceptsJoins": "litepub:acceptsJoins",
+      "nomadicLocations": "nomad:nomadicLocations",
       "Hashtag": "as:Hashtag",
       "canReply": "toot:canReply",
       "approval": "toot:approval",
@@ -455,8 +398,9 @@ Endpoint: https://macgirvin.com/channel/mike
   "type": "Person",
   "id": "https://macgirvin.com/channel/mike",
   "preferredUsername": "mike",
-  "name": "mike",
-  "updated": "2022-11-25T21:18:42Z",
+  "name": "Mike Macgirvin",
+  "created": "2022-11-25T21:18:42Z",
+  "updated": "2023-07-07T09:24:00Z",
   "icon": {
     "type": "Image",
     "mediaType": "image/jpeg",
@@ -491,29 +435,41 @@ Endpoint: https://macgirvin.com/channel/mike
   "outbox": "https://macgirvin.com/outbox/mike",
   "followers": "https://macgirvin.com/followers/mike",
   "following": "https://macgirvin.com/following/mike",
+  "wall": "https://macgirvin.com/outbox/mike",
   "endpoints": {
     "sharedInbox": "https://macgirvin.com/inbox",
     "oauthRegistrationEndpoint": "https://macgirvin.com/api/client/register",
     "oauthAuthorizationEndpoint": "https://macgirvin.com/authorize",
     "oauthTokenEndpoint": "https://macgirvin.com/token",
-    "searchContent": "https://macgirvin.com/search/mike/?search={}",
-    "searchTags": "https://macgirvin.com/search/mike/?tag={}"
+    "searchContent": "https://macgirvin.com/search/mike?search={}",
+    "searchTags": "https://macgirvin.com/search/mike?tag={}"
   },
   "discoverable": true,
-  "canSearch": "https://macgirvin.com/followers/mike",
+  "canSearch": [
+    "https://macgirvin.com/followers/mike"
+  ],
+  "indexable": false,
   "publicKey": {
     "id": "https://macgirvin.com/channel/mike?operation=getkey",
     "owner": "https://macgirvin.com/channel/mike",
     "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
     "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoaTPG5iYKsHJ1cK5CJUy\niN2y6B7aI4JkKMjjZO0gy8+6oa5kx6H5w7qED937a/SvwuYxh1A5yO9nwoEarM5s\nPoYZ+Z+GGbAcvzdWURtDDdRMNgktAayDiOvEdiEbgPVx8f39YnpX39ngM8ukob16\nS8eNwjWG6uwBs6rxSA409fkWjjbQwbe8fNOpynFWoG8jrB+dK6huryYqkyf9S18u\n01IAJOo1ErtaUNkSzkeudXSWokRbN/P77N8LQXorwPF9U6ODblX9QXCWl6EnQ0CX\nfcC/3NM6uXfda2KTn83G1+mo5QgGYBjGzE9K1VngoyX4J8AqvQxoXkqV20vwFSqW\nccB13F5kqRQ4BoQm2v2/e65YzjrHwkUecj7tS8TVXu8z4mdbDDbso/UrS14JmrJh\njnbwPOYpHX/6p2SdYDTF/vUWUmeSatS7sHK92eTRukuONig+PNvx8GUtxgMWPIgH\njIupGnR5lZxFMP+iaAmfxOSbVNeLn/Nka7+UfkDThApfhesBA6P8jAdStTCyqAYB\nY3rTTwplcaKKnNv+pLqBqyhYEghmGvv2EC2UGsL6rFit1RaZgSXWCIcLzdRZo4Ak\nznvz8+juMjyPLp7DdSHhKss9kV9HDxZXjrstDxOR61j0vifaMh6bUVrOAMm0Ffs+\n41v+D6pSA5p0OI2aqNJzLZ8CAwEAAQ==\n-----END PUBLIC KEY-----\n"
   },
+  "assertionMethod": {
+    "id": "https://macgirvin.com/channel/mike?operation=ed25519key",
+    "type": "Multikey",
+    "controller": "https://macgirvin.com/channel/mike",
+    "publicKeyMultibase": "z6MkoeUtTDPBt4Rwxe65DJPnB62vfaH8R58hjFrNGGXgRHkV"
+  },
   "manuallyApprovesFollowers": true,
+  "copiedTo": "https://fediversity.site/channel/mike",
+  "alsoKnownAs": "https://fediversity.site/channel/mike",
   "image": {
     "type": "Image",
     "mediaType": "image/jpeg",
     "url": "https://macgirvin.com/photo/aea3d61f-5f31-4572-8249-dd01e70ab7d8-7"
   },
-  "summary": "Farmer in Bugger All, Australia. Plays a mean guitar, upside down and backward. Communications technologist. Makes the best fediverse software you never heard of.",
+  "summary": "Farmer in Bugger All, Australia. Plays a mean guitar, upside down and backwards. Systems integration, software development, and robot repair.",
   "attachment": [
     {
       "type": "Note",
@@ -523,19 +479,16 @@ Endpoint: https://macgirvin.com/channel/mike
   ],
   "signature": {
     "type": "RsaSignature2017",
-    "nonce": "b05460def60389ef5a0ca7c625b0bb30f541e01e050b063461131a4e20e3a2f5",
+    "nonce": "06c1843c84235dd492933f2641f4dde1931b74cb085772c77e4af3597662ca14",
     "creator": "https://macgirvin.com/channel/mike",
-    "created": "2023-06-01T20:52:37Z",
-    "signatureValue": "Xfm7BM0ikiauP252L1JljdmF7rue8IQUJKyBANubcOWByaPizgEjDBRvSrwWMrAYf6EMo2ncMPMUa9ngKaN+ASALDEjVg/G6qU1eQx88CnVESmtMbf+XuMXnneiZmdarXMYtts52myOF7bDlOrnRBTpkXJ7lEhO4Gn/9+U9riJFYtGQXCQewnDngcrVlSJuQ0cFsIODjwAy73qkE6jXqX6e6jXgTFYGv2Tg3iThjCnGpPcknHma1CntV+KLfCEiVKyacmZqIFH4VFrGmOsdDJr4FX9nhcroVoQOqlSZo7trQwg6ErOy5HLdJRXzajJDriVNnujxgApfQgSwvtdccPzylZcnzamFHsK9SZADTQDkVbiwPvVV6dIJbEosob4SjS4NDWsrE3qIFNWdUC3ZA6Rh1qEi+ML431K71qs46IpiSNAO9S9RSQf1sVxVkzj6D6cLsD2YqObjejRtbcicjCGnm1VmAeEkOdLsp04A23vYm83G2zvlmuYVlcSszXxrMx3Cckh2v1tHrbmanZwMvDGrj67IEd6CXd7r2T2hXxfNBe7b0Ms+3SOxEDULBA6uzMEtKMK1iMQ0UwarMftyz2jp6/zR2HRP9TjbOVyKVRbZdLSJIgP+X+6I4VTxJhY6oNnFO2rRDEqqLam5fyLfYXQxNFVcOsv0rOEDuzOx0czU="
+    "created": "2023-12-30T15:59:09Z",
+    "signatureValue": "QBrzgRvfWgI7kUJCXRhm/qjxk9Cq+QRNgs0gyL2PbbNho7pmP0xx8sHIc903ABx4A3Iuni78ledSHTPf0mR9Pcsrja+2JdCpRC2ZA8UoG3Rh26vATGNU+Nqcu5V47ZU6JSoI33M1i4sfgDhH+IzU0s9idyV3sjMkJTzNEN6qaSLMJQG6Km8HUXEDcJYCmMIQjxJdo5lM1HBOQ0h1MoAFZIYs3jmBh2yERFYcPHEdblYdwzwOeyLUT/qlW8rfi7CP/ymrqJogd0I+BVEL2NAqbGfhUATt+2xgrN0u/5eBCsg4MZhWPlGIjr/Ac7+OTtbC53DkyDWJTsGIHSkbUs+3FDo9UQ4RGVUrcE8hbD87aybDwFIHqLuzzPRL76U8n4HQmgv3pCD7qXDGsw80wsFPIUunW6JkLj2Z7xzNjvvNYmCx523d+KbQeVpoWQoUa6ElZTyj/NvJE87gEaVwDTKu5IKr9lP1NvrNhl/lyhI7i3MbhYMNqRz+H1Zz6/x90iZGk4dJj6wUSRjVQU/P9UBXZFIbCBPzqH2iymFt6a72v91TYDrZNQ/yzalkFTgSWwdOnUpWZD0A0QAeEPTYtj/G1sYnc9qhPp50165rEcZoeJf9E30PdaPxnVnYLwpl2sL+/JB1KVYgsDQPkC3ndff0QEZYqCYE9uBLh/f3AdW0EvE="
   }
 }
 ```
 
-## App: Hubzilla, handle `@contribute@hubzilla.org`
-
-Actor JSON not found.
-
-## App: GNU Social, handle `@administrator@gnusocial.net`
+## App: Hubzilla, handle ``@contribute@hubzilla.org``
+## App: GNU Social, handle ``@administrator@gnusocial.net``
 
 Endpoint: https://gnusocial.net/index.php/user/1
 
@@ -580,7 +533,7 @@ Endpoint: https://gnusocial.net/index.php/user/1
 }
 ```
 
-## App: Pleroma, handle `@karolat@stereophonic.space`
+## App: Pleroma, handle ``@karolat@stereophonic.space``
 
 Endpoint: https://stereophonic.space/users/karolat
 
@@ -611,7 +564,7 @@ Endpoint: https://stereophonic.space/users/karolat
   "following": "https://stereophonic.space/users/karolat/following",
   "icon": {
     "type": "Image",
-    "url": "https://stereophonic.space/media/4ce51b4ab9ec61c48946a918e1e0c8886f4e3ac88f238772c986dc49e80e95a6.jpg"
+    "url": "https://stereophonic.space/media/a94a0a3f51c49c4a5d9f8849cbb75634fddf234cbd49cd6029b4a9364b5da03e.png"
   },
   "id": "https://stereophonic.space/users/karolat",
   "image": {
@@ -620,7 +573,7 @@ Endpoint: https://stereophonic.space/users/karolat
   },
   "inbox": "https://stereophonic.space/users/karolat/inbox",
   "manuallyApprovesFollowers": true,
-  "name": "karolat",
+  "name": ":blobcatcomfnightxmas: karolat",
   "outbox": "https://stereophonic.space/users/karolat/outbox",
   "preferredUsername": "karolat",
   "publicKey": {
@@ -629,13 +582,24 @@ Endpoint: https://stereophonic.space/users/karolat
     "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuT04r5Fo9nf4IvD0WVPh\nyq87qx9bZEha4gtwi15V+U/d0IoZZn5gR5aQUAi7+712NvARwJUmVkkUC3K+FcF1\nTI7oNI96HlIGPvFbacnisuRzM8lKzt5eKzXzB1ZMtk29sgMwLp7tEwLVhLzAPfOT\nsuleNdl1ZCOXVAr+jGh1K27YMEf8U1QiKF0HsriANPxGujhj5S0etotxHa+ur+l4\nJ9V9Q8eMNN1Pd0bhcfd9RSigFQ4jA5KmwS+drryLj6NNq2D6z2Xy7V/PVjGFSUIm\nh8RtuoBOIKrXboKyirKNqNpejYyqPoIIyji6Y5RUaUkXdw0rrYnC2YvF6U6Clr+7\nmwIDAQAB\n-----END PUBLIC KEY-----\n\n"
   },
   "summary": "<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>i&#39;m here to have a good time",
-  "tag": [],
+  "tag": [
+    {
+      "icon": {
+        "type": "Image",
+        "url": "https://stereophonic.space/emoji/custom/for_loyal_client.png"
+      },
+      "id": "https://stereophonic.space/emoji/custom/for_loyal_client.png",
+      "name": ":blobcatcomfnightxmas:",
+      "type": "Emoji",
+      "updated": "1970-01-01T00:00:00Z"
+    }
+  ],
   "type": "Person",
   "url": "https://stereophonic.space/users/karolat"
 }
 ```
 
-## App: Pixelfed, handle `@dansup@pixelfed.social`
+## App: Pixelfed, handle ``@dansup@pixelfed.social``
 
 Endpoint: https://pixelfed.social/users/dansup
 
@@ -645,7 +609,17 @@ Endpoint: https://pixelfed.social/users/dansup
     "https://w3id.org/security/v1",
     "https://www.w3.org/ns/activitystreams",
     {
-      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers"
+      "toot": "http://joinmastodon.org/ns#",
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "alsoKnownAs": {
+        "@id": "as:alsoKnownAs",
+        "@type": "@id"
+      },
+      "movedTo": {
+        "@id": "as:movedTo",
+        "@type": "@id"
+      },
+      "indexable": "toot:indexable"
     }
   ],
   "id": "https://pixelfed.social/users/dansup",
@@ -656,9 +630,11 @@ Endpoint: https://pixelfed.social/users/dansup
   "outbox": "https://pixelfed.social/users/dansup/outbox",
   "preferredUsername": "dansup",
   "name": "dansup",
-  "summary": "Hi, I'm the developer behind <a class=\"u-url mention\" href=\"https://pixelfed.social/Pixelfed\" rel=\"external nofollow noopener\" target=\"_blank\">@Pixelfed</a>! \n\nAlso <a class=\"u-url list-slug\" href=\"https://pixelfed.social/@dansup@mastodon.social\" rel=\"external nofollow noopener\" target=\"_blank\">@dansup@mastodon.social</a> \n\n<a href=\"https://pixelfed.social/discover/tags/pixelfed?src=hash\" title=\"#pixelfed\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#pixelfed</a> <a href=\"https://pixelfed.social/discover/tags/design?src=hash\" title=\"#design\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#design</a> <a href=\"https://pixelfed.social/discover/tags/webdev?src=hash\" title=\"#webdev\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#webdev</a> <a href=\"https://pixelfed.social/discover/tags/pixelfedApp?src=hash\" title=\"#pixelfedApp\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#pixelfedApp</a> <a href=\"https://pixelfed.social/discover/tags/fedi22?src=hash\" title=\"#fedi22\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#fedi22</a>",
+  "summary": "Hi, I'm the developer behind <a class=\"u-url mention\" href=\"https://pixelfed.social/Pixelfed\" rel=\"external nofollow noopener\" target=\"_blank\">@Pixelfed</a>! \n\nAlso <a class=\"u-url list-slug\" href=\"https://pixelfed.social/@dansup@mastodon.social\" rel=\"external nofollow noopener\" target=\"_blank\">@dansup@mastodon.social</a> \n\n<a href=\"https://pixelfed.social/discover/tags/pixelfed?src=hash\" title=\"#pixelfed\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#pixelfed</a> <a href=\"https://pixelfed.social/discover/tags/design?src=hash\" title=\"#design\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#design</a> <a href=\"https://pixelfed.social/discover/tags/webdev?src=hash\" title=\"#webdev\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#webdev</a> <a href=\"https://pixelfed.social/discover/tags/pixelfedApp?src=hash\" title=\"#pixelfedApp\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#pixelfedApp</a> <a href=\"https://pixelfed.social/discover/tags/supApp?src=hash\" title=\"#supApp\" class=\"u-url hashtag\" rel=\"external nofollow noopener\">#supApp</a>",
   "url": "https://pixelfed.social/dansup",
   "manuallyApprovesFollowers": false,
+  "indexable": true,
+  "published": "2018-06-01T00:00:00Z",
   "publicKey": {
     "id": "https://pixelfed.social/users/dansup#main-key",
     "owner": "https://pixelfed.social/users/dansup",
@@ -671,11 +647,14 @@ Endpoint: https://pixelfed.social/users/dansup
   },
   "endpoints": {
     "sharedInbox": "https://pixelfed.social/f/inbox"
-  }
+  },
+  "alsoKnownAs": [
+    "https://mastodon.social/users/dansup"
+  ]
 }
 ```
 
-## App: Friendica, handle `@tobias@friendi.ca`
+## App: Friendica, handle ``@tobias@friendi.ca``
 
 Endpoint: https://friendi.ca/author/tobias/
 
@@ -690,6 +669,9 @@ Endpoint: https://friendi.ca/author/tobias/
       "schema": "http://schema.org#",
       "pt": "https://joinpeertube.org/ns#",
       "toot": "http://joinmastodon.org/ns#",
+      "webfinger": "https://webfinger.net/#",
+      "litepub": "http://litepub.social/ns#",
+      "lemmy": "https://join-lemmy.org/ns#",
       "value": "schema:value",
       "Hashtag": "as:Hashtag",
       "featured": {
@@ -699,31 +681,24 @@ Endpoint: https://friendi.ca/author/tobias/
       "featuredTags": {
         "@id": "toot:featuredTags",
         "@type": "@id"
-      }
+      },
+      "alsoKnownAs": {
+        "@id": "as:alsoKnownAs",
+        "@type": "@id"
+      },
+      "moderators": {
+        "@id": "lemmy:moderators",
+        "@type": "@id"
+      },
+      "postingRestrictedToMods": "lemmy:postingRestrictedToMods",
+      "discoverable": "toot:discoverable",
+      "indexable": "toot:indexable",
+      "sensitive": "as:sensitive",
+      "resource": "webfinger:resource"
     }
   ],
   "id": "https://friendi.ca/author/tobias/",
   "type": "Person",
-  "name": "Tobias",
-  "summary": "",
-  "preferredUsername": "tobias",
-  "url": "https://friendi.ca/author/tobias/",
-  "icon": {
-    "type": "Image",
-    "url": "https://secure.gravatar.com/avatar/7faf7abf39f117b7bb2cf8e08f4eded7?s=120&d=mm&r=g"
-  },
-  "published": "2016-08-14T19:38:30Z",
-  "inbox": "https://friendi.ca/wp-json/activitypub/1.0/users/2/inbox",
-  "outbox": "https://friendi.ca/wp-json/activitypub/1.0/users/2/outbox",
-  "followers": "https://friendi.ca/wp-json/activitypub/1.0/users/2/followers",
-  "following": "https://friendi.ca/wp-json/activitypub/1.0/users/2/following",
-  "manuallyApprovesFollowers": false,
-  "publicKey": {
-    "id": "https://friendi.ca/author/tobias/#main-key",
-    "owner": "https://friendi.ca/author/tobias/",
-    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxbgUisSe02ZxAR7J031G\nd4HtjzTlC30pylguZa2NmB1yLXd0n5xznzWavgFQpD10V9IwypLrbe+84oadZgn+\nZlUSKC/Qbl4ifoj9FJr7GPYXrX6olef6dpRsGLOXMrP8LTphTiyhxy5XtoSWXPZg\njBTJcQuh+BT3s1TX5zzGmHw77xil0HccRl2mr1oL2fDXi85DSE7cfdF9WX6NIN7K\nsnP5N/RFe0FYb9T/kn+KAB/cRE8RRNmKDejWCohkg846ciX1B+3d34uRWFBFjgTN\nQVbuIxCVACmGP2rb6KlaHZqD5SdwZ7r26v8zz5o31c8uxbSkiMwNMgcTFeky0BOv\naQIDAQAB\n-----END PUBLIC KEY-----"
-  },
-  "tag": [],
   "attachment": [
     {
       "type": "PropertyValue",
@@ -735,11 +710,35 @@ Endpoint: https://friendi.ca/author/tobias/
       "name": "Profile",
       "value": "<a rel=\"me\" title=\"https://friendi.ca/author/tobias/\" target=\"_blank\" href=\"https://friendi.ca/author/tobias/\">friendi.ca</a>"
     }
-  ]
+  ],
+  "name": "Tobias",
+  "icon": {
+    "type": "Image",
+    "url": "https://secure.gravatar.com/avatar/7faf7abf39f117b7bb2cf8e08f4eded7?s=120&#038;d=mm&#038;r=g"
+  },
+  "published": "2016-08-14T19:38:30Z",
+  "summary": "",
+  "tag": [],
+  "url": "https://friendi.ca/author/tobias/",
+  "inbox": "https://friendi.ca/wp-json/activitypub/1.0/users/2/inbox",
+  "outbox": "https://friendi.ca/wp-json/activitypub/1.0/users/2/outbox",
+  "following": "https://friendi.ca/wp-json/activitypub/1.0/users/2/following",
+  "followers": "https://friendi.ca/wp-json/activitypub/1.0/users/2/followers",
+  "preferredUsername": "tobias",
+  "publicKey": {
+    "id": "https://friendi.ca/author/tobias/#main-key",
+    "owner": "https://friendi.ca/author/tobias/",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxbgUisSe02ZxAR7J031G\nd4HtjzTlC30pylguZa2NmB1yLXd0n5xznzWavgFQpD10V9IwypLrbe+84oadZgn+\nZlUSKC/Qbl4ifoj9FJr7GPYXrX6olef6dpRsGLOXMrP8LTphTiyhxy5XtoSWXPZg\njBTJcQuh+BT3s1TX5zzGmHw77xil0HccRl2mr1oL2fDXi85DSE7cfdF9WX6NIN7K\nsnP5N/RFe0FYb9T/kn+KAB/cRE8RRNmKDejWCohkg846ciX1B+3d34uRWFBFjgTN\nQVbuIxCVACmGP2rb6KlaHZqD5SdwZ7r26v8zz5o31c8uxbSkiMwNMgcTFeky0BOv\naQIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "manuallyApprovesFollowers": false,
+  "featured": "https://friendi.ca/wp-json/activitypub/1.0/users/2/collections/featured",
+  "discoverable": true,
+  "indexable": true,
+  "resource": "tobias@friendi.ca"
 }
 ```
 
-## App: Funkwhale, handle `@Greensky@open.audio`
+## App: Funkwhale, handle ``@Greensky@open.audio``
 
 Endpoint: https://open.audio/federation/actors/Greensky
 
@@ -764,7 +763,7 @@ Endpoint: https://open.audio/federation/actors/Greensky
   ],
   "icon": {
     "type": "Image",
-    "url": "https://s3.eu-central-2.wasabisys.com/open-audio/attachments/c3/7b/14/img_20221123_125817.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=69ST19MZXMKJ5ZP4NF6L%2F20230601%2Feu-central-2%2Fs3%2Faws4_request&X-Amz-Date=20230601T205245Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=97efa0eac8382a6d4088005697bc3e32fe5c48bdd4a8c50611dfd292cb76ec98",
+    "url": "https://s3.eu-central-2.wasabisys.com/open-audio/attachments/c3/7b/14/img_20221123_125817.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=69ST19MZXMKJ5ZP4NF6L%2F20231230%2Feu-central-2%2Fs3%2Faws4_request&X-Amz-Date=20231230T155911Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3e95083563f67c0feb28308a19aa9f59c94725c6c679c3c74904f1c6c8b4734d",
     "mediaType": "image/jpeg"
   },
   "@context": [
@@ -787,7 +786,7 @@ Endpoint: https://open.audio/federation/actors/Greensky
 }
 ```
 
-## App: WriteFreely, handle `@matt@write.as`
+## App: WriteFreely, handle ``@matt@write.as``
 
 Endpoint: https://write.as/api/collections/matt
 
@@ -807,7 +806,7 @@ Endpoint: https://write.as/api/collections/matt
   "icon": {
     "type": "Image",
     "mediaType": "image/png",
-    "url": "https://write.as/img/avatars/m.png"
+    "url": "https://cdn.writeas.net/img/avatars/m.png"
   },
   "following": "https://write.as/api/collections/matt/following",
   "followers": "https://write.as/api/collections/matt/followers",
@@ -821,7 +820,7 @@ Endpoint: https://write.as/api/collections/matt
 }
 ```
 
-## App: Plume, handle `@actapopuli@fediverse.blog`
+## App: Plume, handle ``@actapopuli@fediverse.blog``
 
 Endpoint: https://fediverse.blog/@/actapopuli/
 
@@ -872,7 +871,7 @@ Endpoint: https://fediverse.blog/@/actapopuli/
 }
 ```
 
-## App: Mobilizon, handle `@framasoft@mobilizon.fr`
+## App: Mobilizon, handle ``@framasoft@mobilizon.fr``
 
 Endpoint: https://mobilizon.fr/@framasoft
 
@@ -898,6 +897,10 @@ Endpoint: https://mobilizon.fr/@framasoft
         "@id": "sc:address",
         "@type": "sc:PostalAddress"
       },
+      "status": {
+        "@id": "ical:status",
+        "@type": "ical:status"
+      },
       "discoverable": "toot:discoverable",
       "repliesModerationOption": {
         "@id": "mz:repliesModerationOption",
@@ -922,6 +925,10 @@ Endpoint: https://mobilizon.fr/@framasoft
       "anonymousParticipationEnabled": {
         "@id": "mz:anonymousParticipationEnabled",
         "@type": "sc:Boolean"
+      },
+      "externalParticipationUrl": {
+        "@id": "mz:externalParticipationUrl",
+        "@type": "sc:URL"
       },
       "addressLocality": "sc:addressLocality",
       "joinMode": {
@@ -1002,32 +1009,32 @@ Endpoint: https://mobilizon.fr/@framasoft
   "followers": "https://mobilizon.fr/@framasoft/followers",
   "following": "https://mobilizon.fr/@framasoft/following",
   "icon": {
-    "mediaType": "image/png",
+    "mediaType": "image/jpeg",
     "type": "Image",
-    "url": "https://mobilizon.fr/media/ff5b2d425fb73e17fcbb56a1a032359ee0b21453c11af59e103e783817a32fdf.png?name=framasoft%27s%20avatar.png"
+    "url": "https://mobilizon.fr/media/890f5396ef80081a6b1b18a5db969746cf8bb340e8a4e657d665e41f6646c539.jpg?name=framasoft%27s%20avatar.jpg"
   },
   "id": "https://mobilizon.fr/@framasoft",
   "image": {
     "mediaType": "image/jpeg",
     "type": "Image",
-    "url": "https://mobilizon.fr/media/7b340fe641e7ad711ebb6f8821b5ce824992db08701e37ebb901c175436aaafc.jpg?name=framasoft%27s%20banner.jpg"
+    "url": "https://mobilizon.fr/media/a8227a16cc80b3d20ff5ee549a29c1b20a0ca1547f8861129aae9f00c3c69d12.jpg?name=framasoft%27s%20banner.jpg"
   },
   "inbox": "https://mobilizon.fr/@framasoft/inbox",
   "location": {
     "address": {
-      "addressCountry": null,
-      "addressLocality": null,
-      "addressRegion": null,
-      "postalCode": null,
-      "streetAddress": null,
+      "addressCountry": "France",
+      "addressLocality": "Lyon",
+      "addressRegion": "Auvergne-Rh\u00f4ne-Alpes",
+      "postalCode": "69007",
+      "streetAddress": "10 bis rue Jangot",
       "type": "PostalAddress"
     },
-    "id": "https://mobilizon.fr/address/e5a11089-5646-4905-84c9-2be31f0b39a3",
-    "name": null,
+    "id": "https://mobilizon.fr/address/0438c134-963c-4c2e-bae1-3fec8e9dbe33",
+    "name": "Lyon",
     "type": "Place"
   },
   "manuallyApprovesFollowers": false,
-  "memberCount": 14,
+  "memberCount": 15,
   "members": "https://mobilizon.fr/@framasoft/members",
   "name": "Framasoft",
   "openness": "moderated",
@@ -1047,76 +1054,19 @@ Endpoint: https://mobilizon.fr/@framasoft
 }
 ```
 
-## App: Lemmy, handle `@lemmy_support@lemmy.ml`
-
-Endpoint: https://lemmy.ml/c/lemmy_support
-
-```js
-{
-  "@context": [
-    "https://www.w3.org/ns/activitystreams",
-    "https://w3id.org/security/v1",
-    {
-      "lemmy": "https://join-lemmy.org/ns#",
-      "litepub": "http://litepub.social/ns#",
-      "pt": "https://joinpeertube.org/ns#",
-      "sc": "http://schema.org/",
-      "ChatMessage": "litepub:ChatMessage",
-      "commentsEnabled": "pt:commentsEnabled",
-      "sensitive": "as:sensitive",
-      "matrixUserId": "lemmy:matrixUserId",
-      "postingRestrictedToMods": "lemmy:postingRestrictedToMods",
-      "removeData": "lemmy:removeData",
-      "stickied": "lemmy:stickied",
-      "moderators": {
-        "@type": "@id",
-        "@id": "lemmy:moderators"
-      },
-      "expires": "as:endTime",
-      "distinguished": "lemmy:distinguished",
-      "language": "sc:inLanguage",
-      "identifier": "sc:identifier"
-    }
-  ],
-  "type": "Group",
-  "id": "https://lemmy.ml/c/lemmy_support",
-  "preferredUsername": "lemmy_support",
-  "inbox": "https://lemmy.ml/c/lemmy_support/inbox",
-  "followers": "https://lemmy.ml/c/lemmy_support/followers",
-  "publicKey": {
-    "id": "https://lemmy.ml/c/lemmy_support#main-key",
-    "owner": "https://lemmy.ml/c/lemmy_support",
-    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwPOjwyvVEQRZFzqRh3up\njHVguAhuht2LCHzs4FVBCw59TxP3CItF9vt19STXdJCT7g2tSdMq0B3sGNiv/qz2\nNshnNWEXQbumAOkBXHrk0wGjo6+VhbvJdFR7bP/Sfb9iUKj/ALSVpiA9xjYHHu5+\nTt5LzIgdBdCm9eB5x81Hbogtoxi1435u3Z+YnOiPSPphf+oAiNKtGaXm9B+DtrrX\nFUbNT5i4ZI6yPJ+jxr/iTIIIDwJSGWZk8ftfT0oyEDhK0hrD4EdNk/EiCtd/rsi6\nx99XH1M1T1WqqNPDftmpwmmv6vIhObUk881+kbhj0ATmAL3EragFqxNz9c14u6Zv\nhQIDAQAB\n-----END PUBLIC KEY-----\n"
-  },
-  "name": "Lemmy Support",
-  "summary": "<p>Support / questions about Lemmy.</p>\n",
-  "source": {
-    "content": "Support / questions about Lemmy.",
-    "mediaType": "text/markdown"
-  },
-  "sensitive": false,
-  "moderators": "https://lemmy.ml/c/lemmy_support/moderators",
-  "attributedTo": "https://lemmy.ml/c/lemmy_support/moderators",
-  "postingRestrictedToMods": false,
-  "outbox": "https://lemmy.ml/c/lemmy_support/outbox",
-  "endpoints": {
-    "sharedInbox": "https://lemmy.ml/inbox"
-  },
-  "featured": "https://lemmy.ml/c/lemmy_support/featured",
-  "language": [],
-  "published": "2019-04-25T16:53:06.109704+00:00",
-  "updated": "2021-09-18T20:48:52.837456+00:00"
-}
-```
-
-## App: Micro.blog, handle `@manton@manton.org`
+## App: Lemmy, handle ``@lemmy_support@lemmy.ml``
+## App: Micro.blog, handle ``@manton@manton.org``
 
 Endpoint: https://manton.org/activitypub/manton
 
 ```js
 {
-  "@context": "https://www.w3.org/ns/activitystreams",
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1"
+  ],
   "id": "https://manton.org/activitypub/manton",
+  "url": "https://manton.org/activitypub/manton",
   "type": "Person",
   "preferredUsername": "manton",
   "name": "Manton Reece",
@@ -1124,11 +1074,12 @@ Endpoint: https://manton.org/activitypub/manton
   "inbox": "https://micro.blog/activitypub/manton/inbox",
   "outbox": "https://micro.blog/activitypub/manton/outbox",
   "followers": "https://micro.blog/activitypub/manton/followers",
+  "following": "https://micro.blog/activitypub/manton/following",
   "endpoints": {
     "sharedInbox": "https://micro.blog/activitypub/shared/inbox"
   },
   "publicKey": {
-    "id": "https://micro.blog/activitypub/manton#key",
+    "id": "https://manton.org/activitypub/manton#key",
     "owner": "https://manton.org/activitypub/manton",
     "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuR/w8q5qb2jbya4mT+Qb\n8mcEuBciT1csv19wltGdEajvOfFP7IoC5CQKIEFBFOIx04e7PzUd2I3Cm0rmHM4V\nIKs6aMXAtgGd9Bz8gfl98VmVukN2QZbJs/MyImj0LXgDsgr8wzABA/BX2sCloPjE\nDBSuJG1pA6n6/+BNlV9/Jfz37AUhewRTfuUnaNp5X/BGcfNTD12ZsHNhD3DorrKC\nV03db0V0LBoNTECRAIBgMeOoq+U+VU/a9bIRWLglBjKZuUGhxmg1/6o0+dxKMzI6\nZtuMUsRC0E9RHTCiLGW4DAYFKxIF2yFcOgm24PCDuUjSgMmP4FiGlUsU5hMMVrHC\nZQIDAQAB\n-----END PUBLIC KEY-----\n"
   },
@@ -1154,3 +1105,4 @@ Endpoint: https://manton.org/activitypub/manton
   ]
 }
 ```
+

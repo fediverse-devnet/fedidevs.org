@@ -3,10 +3,10 @@ title: Webfinger sample files
 description: A selection of Webfinger files as produced by common Fediverse apps
 ---
 
-As of 2023-06-01 20:52:22 UTC. To regenerate, run `make`
+As of 2023-12-30 15:59:00 UTC. To regenerate, run `make`
 in directory `scripts`.
 
-## App: Mastodon, handle `@gargron@mastodon.social`
+## App: Mastodon, handle ``@gargron@mastodon.social``
 
 Endpoint: https://mastodon.social/.well-known/webfinger?resource=acct%3agargron@mastodon.social
 
@@ -31,12 +31,17 @@ Endpoint: https://mastodon.social/.well-known/webfinger?resource=acct%3agargron@
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
       "template": "https://mastodon.social/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/png",
+      "href": "https://files.mastodon.social/accounts/avatars/000/000/001/original/1a8137d3b26704e0.png"
     }
   ]
 }
 ```
 
-## App: PeerTube, handle `@peertube@framapiaf.org`
+## App: PeerTube, handle ``@peertube@framapiaf.org``
 
 Endpoint: https://framapiaf.org/.well-known/webfinger?resource=acct%3apeertube@framapiaf.org
 
@@ -61,38 +66,43 @@ Endpoint: https://framapiaf.org/.well-known/webfinger?resource=acct%3apeertube@f
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
       "template": "https://framapiaf.org/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/png",
+      "href": "https://stockage.framapiaf.org/framapiaf/accounts/avatars/000/223/824/original/03ed95406a9a3cd0.png"
     }
   ]
 }
 ```
 
-## App: Calckey, handle `@kainoa@calckey.social`
+## App: Firefish, handle ``@kainoa@firefish.social``
 
-Endpoint: https://calckey.social/.well-known/webfinger?resource=acct%3akainoa@calckey.social
+Endpoint: https://firefish.social/.well-known/webfinger?resource=acct%3akainoa@firefish.social
 
 ```js
 {
-  "subject": "acct:kainoa@calckey.social",
+  "subject": "acct:kainoa@firefish.social",
   "links": [
     {
       "rel": "self",
       "type": "application/activity+json",
-      "href": "https://calckey.social/users/9aprgabaeb"
+      "href": "https://firefish.social/users/9aprgabaeb"
     },
     {
       "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html",
-      "href": "https://calckey.social/@kainoa"
+      "href": "https://firefish.social/@kainoa"
     },
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
-      "template": "https://calckey.social/authorize-follow?acct={uri}"
+      "template": "https://firefish.social/authorize-follow?acct={uri}"
     }
   ]
 }
 ```
 
-## App: Misskey, handle `https://misskey.io/@syuilo`
+## App: Misskey, handle ``https://misskey.io/@syuilo``
 
 Endpoint: https://misskey.io/.well-known/webfinger?resource=https://misskey.io/@syuilo
 
@@ -118,7 +128,7 @@ Endpoint: https://misskey.io/.well-known/webfinger?resource=https://misskey.io/@
 }
 ```
 
-## App: Streams, handle `@mike@macgirvin.com`
+## App: Streams, handle ``@mike@macgirvin.com``
 
 Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike@macgirvin.com
 
@@ -128,11 +138,14 @@ Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike@macgi
   "aliases": [
     "https://macgirvin.com/channel/mike",
     "https://macgirvin.com/~mike",
-    "https://macgirvin.com/@mike"
+    "https://macgirvin.com/@mike",
+    "https://macgirvin.com/channel/mike",
+    "acct:mike@fediversity.site",
+    "https://fediversity.site/channel/mike"
   ],
   "properties": {
-    "http://webfinger.net/ns/name": "mike",
-    "http://xmlns.com/foaf/0.1/name": "mike",
+    "http://webfinger.net/ns/name": "Mike Macgirvin",
+    "http://xmlns.com/foaf/0.1/name": "Mike Macgirvin",
     "https://w3id.org/security/v1#publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoaTPG5iYKsHJ1cK5CJUy\niN2y6B7aI4JkKMjjZO0gy8+6oa5kx6H5w7qED937a/SvwuYxh1A5yO9nwoEarM5s\nPoYZ+Z+GGbAcvzdWURtDDdRMNgktAayDiOvEdiEbgPVx8f39YnpX39ngM8ukob16\nS8eNwjWG6uwBs6rxSA409fkWjjbQwbe8fNOpynFWoG8jrB+dK6huryYqkyf9S18u\n01IAJOo1ErtaUNkSzkeudXSWokRbN/P77N8LQXorwPF9U6ODblX9QXCWl6EnQ0CX\nfcC/3NM6uXfda2KTn83G1+mo5QgGYBjGzE9K1VngoyX4J8AqvQxoXkqV20vwFSqW\nccB13F5kqRQ4BoQm2v2/e65YzjrHwkUecj7tS8TVXu8z4mdbDDbso/UrS14JmrJh\njnbwPOYpHX/6p2SdYDTF/vUWUmeSatS7sHK92eTRukuONig+PNvx8GUtxgMWPIgH\njIupGnR5lZxFMP+iaAmfxOSbVNeLn/Nka7+UfkDThApfhesBA6P8jAdStTCyqAYB\nY3rTTwplcaKKnNv+pLqBqyhYEghmGvv2EC2UGsL6rFit1RaZgSXWCIcLzdRZo4Ak\nznvz8+juMjyPLp7DdSHhKss9kV9HDxZXjrstDxOR61j0vifaMh6bUVrOAMm0Ffs+\n41v+D6pSA5p0OI2aqNJzLZ8CAwEAAQ==\n-----END PUBLIC KEY-----\n"
   },
   "links": [
@@ -178,76 +191,19 @@ Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike@macgi
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
       "template": "https://macgirvin.com/follow?url={uri}"
+    },
+    {
+      "rel": "http://a9.com/-/spec/opensearch/1.1/",
+      "type": "application/opensearchdescription+xml",
+      "href": "https://macgirvin.com/opensearch/mike",
+      "title": "mike@macgirvin.com"
     }
   ]
 }
 ```
 
-## App: Hubzilla, handle `@contribute@hubzilla.org`
-
-Endpoint: https://hubzilla.org/.well-known/webfinger?resource=acct%3acontribute@hubzilla.org
-
-```js
-{
-  "subject": "acct:contribute@hubzilla.org",
-  "aliases": [
-    "https://hubzilla.org/channel/contribute",
-    "https://hubzilla.org/~contribute",
-    "https://hubzilla.org/@contribute",
-    "acct:contribute@zotlabs.org"
-  ],
-  "properties": {
-    "http://webfinger.net/ns/name": "Hubzilla | Contribute",
-    "http://xmlns.com/foaf/0.1/name": "Hubzilla | Contribute",
-    "https://w3id.org/security/v1#publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvgz86rVOBlnDaYOfPzpC\nUxIproAWLPrGVFHUJ5r3WDkZv8CTgVLMJB4lzgMaLjkHwaFDA0I4Ax7Qdk5Li8ZK\na+DNGGlP8c1nusPhbSMFC8hqY73Vxz7rxMvtHPEpyXLiivBkRDwtXvrz87ALQ13C\nXX0FlV5rV0mzf3W3mny9WKRaYoSqC8tZ9LeRdP2YPMr656BivJxQg3UQZTihkhd2\n/rsEs8T+C8dQdOjN8ON7X1afdO28jkMwdkmOnEkuY/RY15VBt0cS3w+h+lyP0SYO\n+Xj8lh6XJgsBKNU0cKYR7DKL+uCcRwPB9cxgPIIdUX1iqBGXSGnbFU/GHLsvNfxD\nlYRRZoyC2zBkJJE0TAeF6mCVFczBAl1+ECENnbvbrE2JE/jkwZx8dOJ1EAGQFqpC\ntrBywvKqKv5TVvwjuWyt6lluLdTp1+I+Xlt1YoqYqiJESFyCZaOHwQiq/RzWek5s\nntFPmIfbIJcd7tEf2NzQRVhfvxDWIL7XxLUZDazjuIy8lnPngTFf6YJ2Rox3JTaX\nPwu3jVumK0LFp8l1U8ohFHxvQsvHXQWIVvQyogPTvWLe1N2V2HENUfvADgsvCFMd\n8nwUmKhD0IjRKyKGoywQQpgLNSTVLb19JPOUm+Y8OsJLgOo3F3/cwWcEUunuHVUm\nOzhTSexpTaN49YsBkA2l6TUCAwEAAQ==\n-----END PUBLIC KEY-----\n",
-    "http://purl.org/zot/federation": "zot6"
-  },
-  "links": [
-    {
-      "rel": "http://webfinger.net/rel/avatar",
-      "type": "image/png",
-      "href": "https://hubzilla.org/photo/profile/l/17"
-    },
-    {
-      "rel": "http://microformats.org/profile/hcard",
-      "type": "text/html",
-      "href": "https://hubzilla.org/hcard/contribute"
-    },
-    {
-      "rel": "http://openid.net/specs/connect/1.0/issuer",
-      "href": "https://hubzilla.org"
-    },
-    {
-      "rel": "http://webfinger.net/rel/profile-page",
-      "href": "https://hubzilla.org/profile/contribute"
-    },
-    {
-      "rel": "http://webfinger.net/rel/blog",
-      "href": "https://hubzilla.org/channel/contribute"
-    },
-    {
-      "rel": "http://ostatus.org/schema/1.0/subscribe",
-      "template": "https://hubzilla.org/follow?f=&url={uri}"
-    },
-    {
-      "rel": "http://purl.org/zot/protocol/6.0",
-      "type": "application/x-zot+json",
-      "href": "https://hubzilla.org/channel/contribute"
-    },
-    {
-      "rel": "http://purl.org/openwebauth/v1",
-      "type": "application/x-zot+json",
-      "href": "https://hubzilla.org/owa"
-    },
-    {
-      "rel": "magic-public-key",
-      "href": "data:application/magic-public-key,RSA.vgz86rVOBlnDaYOfPzpCUxIproAWLPrGVFHUJ5r3WDkZv8CTgVLMJB4lzgMaLjkHwaFDA0I4Ax7Qdk5Li8ZKa-DNGGlP8c1nusPhbSMFC8hqY73Vxz7rxMvtHPEpyXLiivBkRDwtXvrz87ALQ13CXX0FlV5rV0mzf3W3mny9WKRaYoSqC8tZ9LeRdP2YPMr656BivJxQg3UQZTihkhd2_rsEs8T-C8dQdOjN8ON7X1afdO28jkMwdkmOnEkuY_RY15VBt0cS3w-h-lyP0SYO-Xj8lh6XJgsBKNU0cKYR7DKL-uCcRwPB9cxgPIIdUX1iqBGXSGnbFU_GHLsvNfxDlYRRZoyC2zBkJJE0TAeF6mCVFczBAl1-ECENnbvbrE2JE_jkwZx8dOJ1EAGQFqpCtrBywvKqKv5TVvwjuWyt6lluLdTp1-I-Xlt1YoqYqiJESFyCZaOHwQiq_RzWek5sntFPmIfbIJcd7tEf2NzQRVhfvxDWIL7XxLUZDazjuIy8lnPngTFf6YJ2Rox3JTaXPwu3jVumK0LFp8l1U8ohFHxvQsvHXQWIVvQyogPTvWLe1N2V2HENUfvADgsvCFMd8nwUmKhD0IjRKyKGoywQQpgLNSTVLb19JPOUm-Y8OsJLgOo3F3_cwWcEUunuHVUmOzhTSexpTaN49YsBkA2l6TU.AQAB"
-    }
-  ]
-}
-```
-
-## App: GNU Social, handle `@administrator@gnusocial.net`
+## App: Hubzilla, handle ``@contribute@hubzilla.org``
+## App: GNU Social, handle ``@administrator@gnusocial.net``
 
 Endpoint: https://gnusocial.net/.well-known/webfinger?resource=acct%3aadministrator@gnusocial.net
 
@@ -332,7 +288,7 @@ Endpoint: https://gnusocial.net/.well-known/webfinger?resource=acct%3aadministra
 }
 ```
 
-## App: Pleroma, handle `@karolat@stereophonic.space`
+## App: Pleroma, handle ``@karolat@stereophonic.space``
 
 Endpoint: https://stereophonic.space/.well-known/webfinger?resource=acct%3akarolat@stereophonic.space
 
@@ -366,7 +322,7 @@ Endpoint: https://stereophonic.space/.well-known/webfinger?resource=acct%3akarol
 }
 ```
 
-## App: Pixelfed, handle `@dansup@pixelfed.social`
+## App: Pixelfed, handle ``@dansup@pixelfed.social``
 
 Endpoint: https://pixelfed.social/.well-known/webfinger?resource=acct%3adansup@pixelfed.social
 
@@ -397,7 +353,7 @@ Endpoint: https://pixelfed.social/.well-known/webfinger?resource=acct%3adansup@p
 }
 ```
 
-## App: Friendica, handle `@tobias@friendi.ca`
+## App: Friendica, handle ``@tobias@friendi.ca``
 
 Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias@friendi.ca
 
@@ -406,8 +362,7 @@ Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias@friend
   "subject": "acct:tobias@friendi.ca",
   "aliases": [
     "acct:tobias@friendi.ca",
-    "https://friendi.ca/author/tobias/",
-    "mailto:tobias.diekershoff@gmx.net"
+    "https://friendi.ca/author/tobias/"
   ],
   "links": [
     {
@@ -417,7 +372,7 @@ Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias@friend
     },
     {
       "rel": "http://webfinger.net/rel/avatar",
-      "href": "https://secure.gravatar.com/avatar/7faf7abf39f117b7bb2cf8e08f4eded7?s=96&d=mm&r=g"
+      "href": "https://secure.gravatar.com/avatar/7faf7abf39f117b7bb2cf8e08f4eded7?s=96&#038;d=mm&#038;r=g"
     },
     {
       "rel": "self",
@@ -428,7 +383,7 @@ Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias@friend
 }
 ```
 
-## App: Funkwhale, handle `@Greensky@open.audio`
+## App: Funkwhale, handle ``@Greensky@open.audio``
 
 Endpoint: https://open.audio/.well-known/webfinger?resource=acct%3aGreensky@open.audio
 
@@ -448,7 +403,7 @@ Endpoint: https://open.audio/.well-known/webfinger?resource=acct%3aGreensky@open
 }
 ```
 
-## App: WriteFreely, handle `@matt@write.as`
+## App: WriteFreely, handle ``@matt@write.as``
 
 Endpoint: https://write.as/.well-known/webfinger?resource=acct%3amatt@write.as
 
@@ -474,7 +429,7 @@ Endpoint: https://write.as/.well-known/webfinger?resource=acct%3amatt@write.as
 }
 ```
 
-## App: Plume, handle `@actapopuli@fediverse.blog`
+## App: Plume, handle ``@actapopuli@fediverse.blog``
 
 Endpoint: https://fediverse.blog/.well-known/webfinger?resource=acct%3aactapopuli@fediverse.blog
 
@@ -508,7 +463,7 @@ Endpoint: https://fediverse.blog/.well-known/webfinger?resource=acct%3aactapopul
 }
 ```
 
-## App: Mobilizon, handle `@framasoft@mobilizon.fr`
+## App: Mobilizon, handle ``@framasoft@mobilizon.fr``
 
 Endpoint: https://mobilizon.fr/.well-known/webfinger?resource=acct%3aframasoft@mobilizon.fr
 
@@ -528,9 +483,9 @@ Endpoint: https://mobilizon.fr/.well-known/webfinger?resource=acct%3aframasoft@m
       "template": "https://mobilizon.fr/interact?uri={uri}"
     },
     {
-      "href": "https://mobilizon.fr/media/ff5b2d425fb73e17fcbb56a1a032359ee0b21453c11af59e103e783817a32fdf.png?name=framasoft%27s%20avatar.png",
+      "href": "https://mobilizon.fr/media/890f5396ef80081a6b1b18a5db969746cf8bb340e8a4e657d665e41f6646c539.jpg?name=framasoft%27s%20avatar.jpg",
       "rel": "http://webfinger.net/rel/avatar",
-      "type": "image/png"
+      "type": "image/jpeg"
     },
     {
       "href": "https://mobilizon.fr/@framasoft",
@@ -542,33 +497,8 @@ Endpoint: https://mobilizon.fr/.well-known/webfinger?resource=acct%3aframasoft@m
 }
 ```
 
-## App: Lemmy, handle `@lemmy_support@lemmy.ml`
-
-Endpoint: https://lemmy.ml/.well-known/webfinger?resource=acct%3alemmy_support@lemmy.ml
-
-```js
-{
-  "subject": "acct:lemmy_support@lemmy.ml",
-  "links": [
-    {
-      "rel": "http://webfinger.net/rel/profile-page",
-      "type": "text/html",
-      "href": "https://lemmy.ml/c/lemmy_support",
-      "properties": {}
-    },
-    {
-      "rel": "self",
-      "type": "application/activity+json",
-      "href": "https://lemmy.ml/c/lemmy_support",
-      "properties": {
-        "https://www.w3.org/ns/activitystreams#type": "Group"
-      }
-    }
-  ]
-}
-```
-
-## App: Micro.blog, handle `@manton@manton.org`
+## App: Lemmy, handle ``@lemmy_support@lemmy.ml``
+## App: Micro.blog, handle ``@manton@manton.org``
 
 Endpoint: https://manton.org/.well-known/webfinger?resource=acct%3amanton@manton.org
 
@@ -585,7 +515,12 @@ Endpoint: https://manton.org/.well-known/webfinger?resource=acct%3amanton@manton
       "rel": "self",
       "type": "application/activity+json",
       "href": "https://manton.org/activitypub/manton"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://micro.blog/mastodon/follow?url={uri}"
     }
   ]
 }
 ```
+
