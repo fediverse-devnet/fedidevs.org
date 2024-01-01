@@ -29,3 +29,4 @@ layout: front
 ### Follow us in the Fediverse
 
 - <a rel="me" href="https://mastodon.social/@fedidevs">@fedidevs@mastodon.social</a>
+ <link rel="me" href="https://mastodon.social/@feditest">
