@@ -1,0 +1,3 @@
+[submodule "themes/fedidevs-hugo-theme"]
+	path = themes/fedidevs-hugo-theme
+	url = https://github.com/fediverse-devnet/fedidevs-hugo-theme.git

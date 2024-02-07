@@ -5,6 +5,7 @@ defaultContentLanguage = "en"
 disableKinds = [ "taxonomy" ]
 enableRobotsTXT = true
 enableGitInfo = true
+theme = [ "fedidevs-hugo-theme" ]
 
 [services.rss]
 limit = 42
