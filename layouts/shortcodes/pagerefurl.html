@@ -1,6 +1,0 @@
-{{- $ref := .Get 0 -}}
-{{- with .Site.GetPage $ref -}}
-<a href="{{ .RelPermalink }}">{{ .Permalink }}</a>
-{{- else -}}
-<span class="undef">{{ $ref }}</span>
-{{- end -}}
