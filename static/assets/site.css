@@ -1,0 +1,6 @@
+div.box {
+    border: 1px solid var( --table-border-color );
+    border-radius: 1ex;
+    margin: 2em 0;
+    padding: 0 2em;
+}
