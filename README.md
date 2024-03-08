@@ -16,7 +16,7 @@ $ brew install git-lfs
 $ git lfs install
 ```
 
-Install Hugo, e.g. on the Mac:
+Install Hugo, e.g. on macOS:
 
 ```shell
 $ brew install hugo
@@ -27,15 +27,16 @@ $ brew install hugo
 Get the content:
 
 ```shell
-$ git clone https://github.com/fediverse-devnet/fedidevs.org.git
+$ git clone --recurse-submodules https://github.com/fediverse-devnet/fedidevs.org.git
 $ cd fedidevs.org
-$ git submodule update
 ```
+
+Note that the [theme](https://github.com/fediverse-devnet/fedidevs-hugo-theme.git) is a submodule, so you need to use `--recurse-submodules` to get it. If you do not, you'll likely see an error related to shortcode templates when you try to run the site.
 
 Run:
 
 ```shell
-$ hugo server
+$ hugo serve
 ```
 
 Then go to `http://localhost:1313/` (actual port will be printed to the terminal).
