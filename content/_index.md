@@ -26,7 +26,8 @@ layout: front
 
 ### Upcoming meetings
 
-- {{% pageref "/notes/2024-03-07" %}}
+- *next* TBD
+- *most recent* {{% pageref "/notes/2024-03-07" %}}
 {{% /box %}}
 
 ### Find us on Matrix
