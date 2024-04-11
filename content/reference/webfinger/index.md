@@ -3,12 +3,12 @@ title: Webfinger sample files
 description: A selection of Webfinger files as produced by common Fediverse apps
 ---
 
-As of 2023-12-30 15:59:00 UTC. To regenerate, run `make`
+As of 2024-04-11 03:35:10 UTC. To regenerate, run `make`
 in directory `scripts`.
 
 ## App: Mastodon, handle ``@gargron@mastodon.social``
 
-Endpoint: https://mastodon.social/.well-known/webfinger?resource=acct%3agargron@mastodon.social
+Endpoint: https://mastodon.social/.well-known/webfinger?resource=acct%3agargron%40mastodon.social
 
 ```js
 {
@@ -35,7 +35,7 @@ Endpoint: https://mastodon.social/.well-known/webfinger?resource=acct%3agargron@
     {
       "rel": "http://webfinger.net/rel/avatar",
       "type": "image/png",
-      "href": "https://files.mastodon.social/accounts/avatars/000/000/001/original/1a8137d3b26704e0.png"
+      "href": "https://files.mastodon.social/accounts/avatars/000/000/001/original/a0a49d80c3de5f75.png"
     }
   ]
 }
@@ -43,7 +43,7 @@ Endpoint: https://mastodon.social/.well-known/webfinger?resource=acct%3agargron@
 
 ## App: PeerTube, handle ``@peertube@framapiaf.org``
 
-Endpoint: https://framapiaf.org/.well-known/webfinger?resource=acct%3apeertube@framapiaf.org
+Endpoint: https://framapiaf.org/.well-known/webfinger?resource=acct%3apeertube%40framapiaf.org
 
 ```js
 {
@@ -71,32 +71,6 @@ Endpoint: https://framapiaf.org/.well-known/webfinger?resource=acct%3apeertube@f
       "rel": "http://webfinger.net/rel/avatar",
       "type": "image/png",
       "href": "https://stockage.framapiaf.org/framapiaf/accounts/avatars/000/223/824/original/03ed95406a9a3cd0.png"
-    }
-  ]
-}
-```
-
-## App: Firefish, handle ``@kainoa@firefish.social``
-
-Endpoint: https://firefish.social/.well-known/webfinger?resource=acct%3akainoa@firefish.social
-
-```js
-{
-  "subject": "acct:kainoa@firefish.social",
-  "links": [
-    {
-      "rel": "self",
-      "type": "application/activity+json",
-      "href": "https://firefish.social/users/9aprgabaeb"
-    },
-    {
-      "rel": "http://webfinger.net/rel/profile-page",
-      "type": "text/html",
-      "href": "https://firefish.social/@kainoa"
-    },
-    {
-      "rel": "http://ostatus.org/schema/1.0/subscribe",
-      "template": "https://firefish.social/authorize-follow?acct={uri}"
     }
   ]
 }
@@ -130,7 +104,7 @@ Endpoint: https://misskey.io/.well-known/webfinger?resource=https://misskey.io/@
 
 ## App: Streams, handle ``@mike@macgirvin.com``
 
-Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike@macgirvin.com
+Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike%40macgirvin.com
 
 ```js
 {
@@ -139,9 +113,7 @@ Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike@macgi
     "https://macgirvin.com/channel/mike",
     "https://macgirvin.com/~mike",
     "https://macgirvin.com/@mike",
-    "https://macgirvin.com/channel/mike",
-    "acct:mike@fediversity.site",
-    "https://fediversity.site/channel/mike"
+    "https://macgirvin.com/channel/mike"
   ],
   "properties": {
     "http://webfinger.net/ns/name": "Mike Macgirvin",
@@ -202,10 +174,86 @@ Endpoint: https://macgirvin.com/.well-known/webfinger?resource=acct%3amike@macgi
 }
 ```
 
-## App: Hubzilla, handle ``@contribute@hubzilla.org``
+## App: Hubzilla, handle ``@scott@authorship.studio``
+
+Endpoint: https://authorship.studio/.well-known/webfinger?resource=acct%3ascott%40authorship.studio
+
+```js
+{
+  "subject": "acct:scott@authorship.studio",
+  "aliases": [
+    "https://authorship.studio/channel/scott",
+    "https://authorship.studio/~scott",
+    "https://authorship.studio/@scott",
+    "acct:scott@biztechtonics.net",
+    "acct:scott@completehostingguide.com",
+    "acct:scott@wistex.biz",
+    "acct:scott@scottstolz.com"
+  ],
+  "properties": {
+    "http://webfinger.net/ns/name": "Scott M. Stolz",
+    "http://xmlns.com/foaf/0.1/name": "Scott M. Stolz",
+    "https://w3id.org/security/v1#publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvBaccO+wjQ9hQ6cb23a1\nCV0cv8QVH7Cu/KR55ogX5uJ+IW4uMcxmLQkyw/5oFbZOgjvDxm7zDqkDp45R2aIC\nyRmcpjSy2+sREM7OBzin9GY3N4EYrXNdl6eamrSk8v3gArIe/UbwoEzXzM4lcvut\nZGqgjoo/42j1eaAYGG/Wyzs7K3GFVJBOwYS6us/k9noF8sUE+vJI0c9UEbODNfyU\nsPC+R/n++lECAkV04a/FDqCztkqExtz2xpXnNs+yuHij4e1g3QAvcaUmIKhD2DzG\nU70pt1y4q9vZ+U/D092wGQ6fQ48r6/GG9c4yWwOxeKZfT0E8Bg5YP3NW6aGxrZA4\nOKkW3UFhTWFlBK/7DNcsuzZBA8Svt5kjJYO89xYfTAQ3ywgkKQG13/KdF2iRzlCS\nBv5qq2obBsdqOfoibd9la4tC0RY6R934DLlhHvGX57gKtbm1Fc1fOXwCYd5YMXPa\n1ewG2dD02fZ4h1zeZL2uqlzkrSEE6tiMcaux7I63q1y0MW2NFIp8i65BeSsHDcKR\n1khiDmjxN+OZLgJ7PpJM6C7xKj1V/YxP8lD5uCFFUlD9v4F1j1wa0aQ+I9nOfVwJ\nRcfCyQvXDWyen9vne8XOXV1Kb8qm7FCyrUs4WHt5AZaXC5em+RMlFM7eY+YAnxcs\nRAMnWdbqj5wXroPxEypQn60CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+    "http://purl.org/zot/federation": "zot6,activitypub"
+  },
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "",
+      "href": "https://authorship.studio/photo/profile/l/4"
+    },
+    {
+      "rel": "http://microformats.org/profile/hcard",
+      "type": "text/html",
+      "href": "https://authorship.studio/hcard/scott"
+    },
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://authorship.studio"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://authorship.studio/profile/scott"
+    },
+    {
+      "rel": "http://webfinger.net/rel/blog",
+      "href": "https://authorship.studio/channel/scott"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://authorship.studio/follow?f=&url={uri}"
+    },
+    {
+      "rel": "http://purl.org/zot/protocol/6.0",
+      "type": "application/x-zot+json",
+      "href": "https://authorship.studio/channel/scott"
+    },
+    {
+      "rel": "http://purl.org/openwebauth/v1",
+      "type": "application/x-zot+json",
+      "href": "https://authorship.studio/owa"
+    },
+    {
+      "rel": "magic-public-key",
+      "href": "data:application/magic-public-key,RSA.vBaccO-wjQ9hQ6cb23a1CV0cv8QVH7Cu_KR55ogX5uJ-IW4uMcxmLQkyw_5oFbZOgjvDxm7zDqkDp45R2aICyRmcpjSy2-sREM7OBzin9GY3N4EYrXNdl6eamrSk8v3gArIe_UbwoEzXzM4lcvutZGqgjoo_42j1eaAYGG_Wyzs7K3GFVJBOwYS6us_k9noF8sUE-vJI0c9UEbODNfyUsPC-R_n--lECAkV04a_FDqCztkqExtz2xpXnNs-yuHij4e1g3QAvcaUmIKhD2DzGU70pt1y4q9vZ-U_D092wGQ6fQ48r6_GG9c4yWwOxeKZfT0E8Bg5YP3NW6aGxrZA4OKkW3UFhTWFlBK_7DNcsuzZBA8Svt5kjJYO89xYfTAQ3ywgkKQG13_KdF2iRzlCSBv5qq2obBsdqOfoibd9la4tC0RY6R934DLlhHvGX57gKtbm1Fc1fOXwCYd5YMXPa1ewG2dD02fZ4h1zeZL2uqlzkrSEE6tiMcaux7I63q1y0MW2NFIp8i65BeSsHDcKR1khiDmjxN-OZLgJ7PpJM6C7xKj1V_YxP8lD5uCFFUlD9v4F1j1wa0aQ-I9nOfVwJRcfCyQvXDWyen9vne8XOXV1Kb8qm7FCyrUs4WHt5AZaXC5em-RMlFM7eY-YAnxcsRAMnWdbqj5wXroPxEypQn60.AQAB"
+    },
+    {
+      "rel": "self",
+      "type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
+      "href": "https://authorship.studio/channel/scott"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://authorship.studio/channel/scott"
+    }
+  ]
+}
+```
+
 ## App: GNU Social, handle ``@administrator@gnusocial.net``
 
-Endpoint: https://gnusocial.net/.well-known/webfinger?resource=acct%3aadministrator@gnusocial.net
+Endpoint: https://gnusocial.net/.well-known/webfinger?resource=acct%3aadministrator%40gnusocial.net
 
 ```js
 {
@@ -290,7 +338,7 @@ Endpoint: https://gnusocial.net/.well-known/webfinger?resource=acct%3aadministra
 
 ## App: Pleroma, handle ``@karolat@stereophonic.space``
 
-Endpoint: https://stereophonic.space/.well-known/webfinger?resource=acct%3akarolat@stereophonic.space
+Endpoint: https://stereophonic.space/.well-known/webfinger?resource=acct%3akarolat%40stereophonic.space
 
 ```js
 {
@@ -324,7 +372,7 @@ Endpoint: https://stereophonic.space/.well-known/webfinger?resource=acct%3akarol
 
 ## App: Pixelfed, handle ``@dansup@pixelfed.social``
 
-Endpoint: https://pixelfed.social/.well-known/webfinger?resource=acct%3adansup@pixelfed.social
+Endpoint: https://pixelfed.social/.well-known/webfinger?resource=acct%3adansup%40pixelfed.social
 
 ```js
 {
@@ -348,6 +396,11 @@ Endpoint: https://pixelfed.social/.well-known/webfinger?resource=acct%3adansup@p
       "rel": "self",
       "type": "application/activity+json",
       "href": "https://pixelfed.social/users/dansup"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/jpeg",
+      "href": "https://pixelfed.social/storage/avatars/000/000/000/000/000/000/2/mLZr2R47XEwbmasH2M3P_avatar.jpg?v=57"
     }
   ]
 }
@@ -355,14 +408,16 @@ Endpoint: https://pixelfed.social/.well-known/webfinger?resource=acct%3adansup@p
 
 ## App: Friendica, handle ``@tobias@friendi.ca``
 
-Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias@friendi.ca
+Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias%40friendi.ca
 
 ```js
 {
   "subject": "acct:tobias@friendi.ca",
   "aliases": [
     "acct:tobias@friendi.ca",
-    "https://friendi.ca/author/tobias/"
+    "https://friendi.ca/author/tobias/",
+    "https://friendi.ca/author/tobias/",
+    "https://friendi.ca/@tobias"
   ],
   "links": [
     {
@@ -385,7 +440,7 @@ Endpoint: https://friendi.ca/.well-known/webfinger?resource=acct%3atobias@friend
 
 ## App: Funkwhale, handle ``@Greensky@open.audio``
 
-Endpoint: https://open.audio/.well-known/webfinger?resource=acct%3aGreensky@open.audio
+Endpoint: https://open.audio/.well-known/webfinger?resource=acct%3aGreensky%40open.audio
 
 ```js
 {
@@ -405,7 +460,7 @@ Endpoint: https://open.audio/.well-known/webfinger?resource=acct%3aGreensky@open
 
 ## App: WriteFreely, handle ``@matt@write.as``
 
-Endpoint: https://write.as/.well-known/webfinger?resource=acct%3amatt@write.as
+Endpoint: https://write.as/.well-known/webfinger?resource=acct%3amatt%40write.as
 
 ```js
 {
@@ -431,7 +486,7 @@ Endpoint: https://write.as/.well-known/webfinger?resource=acct%3amatt@write.as
 
 ## App: Plume, handle ``@actapopuli@fediverse.blog``
 
-Endpoint: https://fediverse.blog/.well-known/webfinger?resource=acct%3aactapopuli@fediverse.blog
+Endpoint: https://fediverse.blog/.well-known/webfinger?resource=acct%3aactapopuli%40fediverse.blog
 
 ```js
 {
@@ -465,7 +520,7 @@ Endpoint: https://fediverse.blog/.well-known/webfinger?resource=acct%3aactapopul
 
 ## App: Mobilizon, handle ``@framasoft@mobilizon.fr``
 
-Endpoint: https://mobilizon.fr/.well-known/webfinger?resource=acct%3aframasoft@mobilizon.fr
+Endpoint: https://mobilizon.fr/.well-known/webfinger?resource=acct%3aframasoft%40mobilizon.fr
 
 ```js
 {
@@ -498,9 +553,35 @@ Endpoint: https://mobilizon.fr/.well-known/webfinger?resource=acct%3aframasoft@m
 ```
 
 ## App: Lemmy, handle ``@lemmy_support@lemmy.ml``
+
+Endpoint: https://lemmy.ml/.well-known/webfinger?resource=acct%3alemmy_support%40lemmy.ml
+
+```js
+{
+  "subject": "acct:lemmy_support@lemmy.ml",
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://lemmy.ml/c/lemmy_support",
+      "template": null
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://lemmy.ml/c/lemmy_support",
+      "template": null,
+      "properties": {
+        "https://www.w3.org/ns/activitystreams#type": "Group"
+      }
+    }
+  ]
+}
+```
+
 ## App: Micro.blog, handle ``@manton@manton.org``
 
-Endpoint: https://manton.org/.well-known/webfinger?resource=acct%3amanton@manton.org
+Endpoint: https://manton.org/.well-known/webfinger?resource=acct%3amanton%40manton.org
 
 ```js
 {
@@ -519,6 +600,28 @@ Endpoint: https://manton.org/.well-known/webfinger?resource=acct%3amanton@manton
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
       "template": "https://micro.blog/mastodon/follow?url={uri}"
+    }
+  ]
+}
+```
+
+## App: Threads, handle ``@mosseri@threads.net``
+
+Endpoint: https://threads.net/.well-known/webfinger?resource=acct%3amosseri%40threads.net
+
+```js
+{
+  "subject": "acct:mosseri@threads.net",
+  "links": [
+    {
+      "href": "https://www.threads.net/ap/users/mosseri/",
+      "rel": "self",
+      "type": "application/activity+json"
+    },
+    {
+      "href": "https://www.threads.net/@mosseri",
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html"
     }
   ]
 }

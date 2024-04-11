@@ -5,9 +5,6 @@
     "PeerTube": {
         "@peertube@framapiaf.org": {}
     },
-    "Firefish": {
-        "@kainoa@firefish.social": {}
-    },
     "Misskey": {
         "https://misskey.io/@syuilo": {}
     },
@@ -15,7 +12,7 @@
         "@mike@macgirvin.com": {}
     },
     "Hubzilla": {
-        "@contribute@hubzilla.org": {}
+        "@scott@authorship.studio": {}
     },
     "GNU Social": {
         "@administrator@gnusocial.net": {}
@@ -46,5 +43,8 @@
     },
     "Micro.blog": {
         "@manton@manton.org": {}
+    },
+    "Threads": {
+        "@mosseri@threads.net": {}
     }
 }
