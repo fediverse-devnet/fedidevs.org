@@ -5,6 +5,7 @@ tags:
   - Event
   - News 
   - Projects
+  - Badges
   - Social Networking
   - Federation
 ---
@@ -59,6 +60,22 @@ Projects can have various attributes, such as a description, goals, milestones, 
 > **Please note that project federation is currently under experimentation and development in Communecter, aiming to enable the exchange and collaboration of projects across federated instances. This feature is being actively worked on to enhance the federation capabilities of projects in the future.**
 >
 
+### Badges
+
+The Badge Federation System within Communecter allows users and organizations to create, manage, and interact with badges, enhancing community engagement and recognition. Users can:
+
+- Create a Badge: Introduce a new badge by sending a `Create` activity with the Badge object, defining its criteria, appearance, and purpose.
+- Edit a Badge: Update an existing badge by sending an `Update` activity to modify its details, criteria, or visual design.
+- Delete a Badge: Remove a badge by sending a `Delete` activity, indicating its removal from the system.
+- Self-Assign a Badge: Claim a badge for themselves by sending a Self-Assign activity, acknowledging their own achievements.
+- Assign a Badge to Someone: Grant a badge to another user by sending an Assign activity, recognizing their contributions or accomplishments.
+- Assign a Badge to an Organization: Award a badge to an organization by sending an Assign to Organization activity, recognizing collective efforts and milestones.
+- Refuse a Badge: Decline a badge by sending a Refuse activity, if they feel the badge is undeserved or not applicable.
+- Accept a Badge: Accept a badge by sending an `Accept` activity, acknowledging the recognition.
+- Reject a Badge: Reject a badge by sending a `Reject` activity, declining the recognition.
+
+
+Badges can have various attributes, such as a description, criteria, visual design, associated users, and related activities. Users can search for badges based on their interests or browse
 
 ## Interoperability
 
@@ -92,3 +109,4 @@ Supported Objects
 - [**Note**](objects/note)
 - [**Event**](objects/event)
 - [**Project**](objects/project)
+- [**Badge**](objects/badge)

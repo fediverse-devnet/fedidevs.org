@@ -5,7 +5,7 @@ tags:
   - Delete
 ---
 
-The `Delete` activity is used to indicate the deletion of objects in Communecter, such as `Note`, `Event`, or `Project`.
+The `Delete` activity is used to indicate the deletion of objects in Communecter, such as `Note`, `Event`, `Project`, `Badge`.
 
 ### Reference
 

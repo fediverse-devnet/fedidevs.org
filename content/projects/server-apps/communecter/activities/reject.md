@@ -33,3 +33,25 @@ In this example, **Armel Wanes** sends a Reject activity to decline an invitatio
 }
 
 ```
+### Rejecting an badge
+
+
+Here's a simplified explanation for someone who doesn't code:
+
+This message describes a situation where someone named ArmelWanes offered a badge called 'Community Meetup' to Hajavololona. However, Hajavololona decided not to accept this offer, and the rejection was communicated back to ArmelWanes through this message.
+
+
+```json
+{
+  "@context" : "https://www.w3.org/ns/activitystreams",
+  "type" : "Reject",
+  "object" : "https://communecter.org/api/activitypub/activity/id/652e90cf0b894",
+  "id" : "https://communecter.org/api/activitypub/activity/id/652e912ddeba6",
+  "actor" : "https://communecter.org/api/activitypub/users/u/ArmelWanes",
+  "instrument" : {
+    "revokeAuthor" : "https://communecter.org/api/activitypub/users/u/ArmelWanes",
+    "revokeReason" : "Hajavololona rejected the offer of the 'Community Meetup' badge from ArmelWanes."
+  },
+  "summary" : "Hajavololona has reject your badge"
+}
+```

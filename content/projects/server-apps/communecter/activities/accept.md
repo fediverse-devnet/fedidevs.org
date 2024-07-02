@@ -134,3 +134,17 @@ In this example, the object field specifies the URL of the object (e.g., a Follo
 
 **Note:** The possible roles are "Financeur", "Sponsor", "Organisateur", "President", "Directeur", "Conferencier", and "Intervenant".
 
+
+
+#### Accept Badge
+In this example, the user oceatoon accepts a badge from an issuer. The object field specifies the URL of the badge being accepted, and the actor field indicates the user accepting the badge.
+
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Accept",
+  "object": "https://communecter.org/api/activitypub/activity/id/652539d72a857",
+  "id": "https://communecter.org/api/activitypub/activity/id/6303371a4b0fa",
+  "actor": "https://communecter.org/api/activitypub/users/u/oceatoon"
+}
+```
