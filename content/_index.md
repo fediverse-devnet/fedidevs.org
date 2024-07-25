@@ -40,5 +40,5 @@ Check back for future meetings.
 
 ### Follow us in the Fediverse
 
-- <a rel="me" href="https://mastodon.social/@fedidevs">@fedidevs@mastodon.social</a>
- <link rel="me" href="https://mastodon.social/@feditest">
+- <a rel="me" href="https://mastodon.social/@fedidevs">@fedidevs@mastodon.social</a><link rel="me" href="https://mastodon.social/@feditest">
+- <a rel="me" href="https://makertube.net/c/fedidevs/">@fedidevs@makertube.net</a>
