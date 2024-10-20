@@ -103,3 +103,17 @@ In this example, **Yorre** invites **Armel Wanes** to become an admin without sp
   "target": "https://communecter.org/api/activitypub/activity/id/649d514eba30c"
 }
 ```
+
+
+The `Invite` activity can be used to invite users to join an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Invite",
+  "actor": "https://communecter.org/api/activitypub/users/u/OrgAdmin",
+  "object": "https://communecter.org/api/activitypub/users/u/PotentialMember",
+  "target": "https://communecter.org/api/activitypub/organizations/o/EcoFriendlyOrg"
+}
+```

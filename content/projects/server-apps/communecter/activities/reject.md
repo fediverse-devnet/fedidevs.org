@@ -55,3 +55,16 @@ This message describes a situation where someone named ArmelWanes offered a badg
   "summary" : "Hajavololona has reject your badge"
 }
 ```
+
+
+The `Reject` activity can be used to decline invitations or offers related to an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Reject",
+  "actor": "https://communecter.org/api/activitypub/users/u/BusyPerson",
+  "object": "https://communecter.org/api/activitypub/activity/id/inviteToOrg456"
+}
+```

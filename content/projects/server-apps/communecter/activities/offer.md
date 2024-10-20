@@ -60,3 +60,20 @@ This Activity Action describes an `Offer` activity, involving the assignment of 
 }
 
 ```
+
+The `Offer` activity can be used to offer roles or responsibilities within an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Offer",
+  "actor": "https://communecter.org/api/activitypub/users/u/BoardMember",
+  "object": {
+    "type": "Role",
+    "name": "Treasurer"
+  },
+  "target": "https://communecter.org/api/activitypub/users/u/FinanceExpert",
+  "context": "https://communecter.org/api/activitypub/organizations/o/NonProfitOrg"
+}
+```

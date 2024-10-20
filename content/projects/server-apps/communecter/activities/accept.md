@@ -148,3 +148,21 @@ In this example, the user oceatoon accepts a badge from an issuer. The object fi
   "actor": "https://communecter.org/api/activitypub/users/u/oceatoon"
 }
 ```
+
+
+The `Accept` activity can be used in the context of organizations:
+
+- Accepting an invitation to join an organization
+- Accepting a role or position within an organization
+- Accepting a collaboration request from another organization
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Accept",
+  "actor": "https://communecter.org/api/activitypub/users/u/JohnDoe",
+  "object": "https://communecter.org/api/activitypub/activity/id/inviteToOrg123",
+  "target": "https://communecter.org/api/activitypub/organizations/o/EcoFriendlyOrg"
+}
+```

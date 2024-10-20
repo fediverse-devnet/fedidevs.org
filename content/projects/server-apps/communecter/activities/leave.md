@@ -33,3 +33,15 @@ In this example, **Armel Wanes** sends a leave request to withdraw from a projec
   "target": "https://communecter.org/api/activitypub/object/id/649c9e7ae4135"
 }
 ```
+
+The `Leave` activity can be used when a member leaves an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Leave",
+  "actor": "https://communecter.org/api/activitypub/users/u/FormerMember",
+  "object": "https://communecter.org/api/activitypub/organizations/o/LocalCharity"
+}
+```

@@ -74,3 +74,19 @@ In this example, Hajavololona creates a new badge titled "Advanced Training Badg
 }
 
 ```
+
+The `Create` activity can be used to create a new organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Create",
+  "actor": "https://communecter.org/api/activitypub/users/u/JaneDoe",
+  "object": {
+    "type": "Organization",
+    "name": "Green Earth Initiative",
+    "summary": "A non-profit dedicated to environmental conservation"
+  }
+}
+```

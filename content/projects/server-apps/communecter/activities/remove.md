@@ -30,3 +30,17 @@ In this example, **Yorre** sends a Remove activity to revoke a previous invitati
   "id": "https://efc4-102-16-43-150.ngrok-free.app/api/activitypub/activity/id/649d3b54b3a53",
   "object": "https://efc4-102-16-43-150.ngrok-free.app/api/activitypub/activity/id/649d39d47e6c3"
 }
+
+
+The `Remove` activity can be used to remove a member from an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Remove",
+  "actor": "https://communecter.org/api/activitypub/users/u/OrgAdmin",
+  "object": "https://communecter.org/api/activitypub/users/u/FormerMember",
+  "target": "https://communecter.org/api/activitypub/organizations/o/CommunityGroup"
+}
+```
