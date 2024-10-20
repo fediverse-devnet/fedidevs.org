@@ -73,6 +73,6 @@ Example:
   "@context": "https://www.w3.org/ns/activitystreams",
   "type": "Delete",
   "actor": "https://communecter.org/api/activitypub/users/u/AdminUser",
-  "object": "https://communecter.org/api/activitypub/organizations/o/DissolvedOrg"
+  "object": "https://communecter.org/api/activitypub/groups/g/DissolvedOrg"
 }
 ```

@@ -163,6 +163,6 @@ Example:
   "type": "Accept",
   "actor": "https://communecter.org/api/activitypub/users/u/JohnDoe",
   "object": "https://communecter.org/api/activitypub/activity/id/inviteToOrg123",
-  "target": "https://communecter.org/api/activitypub/organizations/o/EcoFriendlyOrg"
+  "target": "https://communecter.org/api/activitypub/groups/g/EcoFriendlyOrg"
 }
 ```

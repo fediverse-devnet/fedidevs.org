@@ -82,6 +82,6 @@ Example:
   "@context": "https://www.w3.org/ns/activitystreams",
   "type": "Join",
   "actor": "https://communecter.org/api/activitypub/users/u/NewVolunteer",
-  "object": "https://communecter.org/api/activitypub/organizations/o/CommunityOutreach"
+  "object": "https://communecter.org/api/activitypub/groups/g/CommunityOutreach"
 }
 ```

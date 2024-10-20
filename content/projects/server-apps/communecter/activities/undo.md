@@ -46,7 +46,7 @@ Example (undoing a Follow):
   "object": {
     "type": "Follow",
     "actor": "https://communecter.org/api/activitypub/users/u/ChangedMind",
-    "object": "https://communecter.org/api/activitypub/organizations/o/LocalCharity"
+    "object": "https://communecter.org/api/activitypub/groups/g/LocalCharity"
   }
 }
 ```

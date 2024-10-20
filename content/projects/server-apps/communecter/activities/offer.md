@@ -74,6 +74,6 @@ Example:
     "name": "Treasurer"
   },
   "target": "https://communecter.org/api/activitypub/users/u/FinanceExpert",
-  "context": "https://communecter.org/api/activitypub/organizations/o/NonProfitOrg"
+  "context": "https://communecter.org/api/activitypub/groups/g/NonProfitOrg"
 }
 ```

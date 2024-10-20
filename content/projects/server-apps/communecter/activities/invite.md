@@ -114,6 +114,6 @@ Example:
   "type": "Invite",
   "actor": "https://communecter.org/api/activitypub/users/u/OrgAdmin",
   "object": "https://communecter.org/api/activitypub/users/u/PotentialMember",
-  "target": "https://communecter.org/api/activitypub/organizations/o/EcoFriendlyOrg"
+  "target": "https://communecter.org/api/activitypub/groups/g/EcoFriendlyOrg"
 }
 ```

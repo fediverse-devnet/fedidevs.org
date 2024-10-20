@@ -42,6 +42,7 @@ Example:
   "@context": "https://www.w3.org/ns/activitystreams",
   "type": "Leave",
   "actor": "https://communecter.org/api/activitypub/users/u/FormerMember",
-  "object": "https://communecter.org/api/activitypub/organizations/o/LocalCharity"
+  "object": "https://communecter.org/api/activitypub/groups/g/LocalCharity"
 }
 ```
+

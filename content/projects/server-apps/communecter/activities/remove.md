@@ -41,6 +41,6 @@ Example:
   "type": "Remove",
   "actor": "https://communecter.org/api/activitypub/users/u/OrgAdmin",
   "object": "https://communecter.org/api/activitypub/users/u/FormerMember",
-  "target": "https://communecter.org/api/activitypub/organizations/o/CommunityGroup"
+  "target": "https://communecter.org/api/activitypub/groups/g/CommunityGroup"
 }
 ```

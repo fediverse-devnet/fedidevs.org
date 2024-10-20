@@ -47,6 +47,6 @@ Example:
   "@context": "https://www.w3.org/ns/activitystreams",
   "type": "Follow",
   "actor": "https://communecter.org/api/activitypub/users/u/EnvironmentEnthusiast",
-  "object": "https://communecter.org/api/activitypub/organizations/o/GreenEarthInitiative"
+  "object": "https://communecter.org/api/activitypub/groups/g/GreenEarthInitiative"
 }
 ```

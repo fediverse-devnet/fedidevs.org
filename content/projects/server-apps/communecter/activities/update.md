@@ -93,7 +93,7 @@ Example:
   "actor": "https://communecter.org/api/activitypub/users/u/OrgManager",
   "object": {
     "type": "Organization",
-    "id": "https://communecter.org/api/activitypub/organizations/o/EcoFriendlyOrg",
+    "id": "https://communecter.org/api/activitypub/groups/g/EcoFriendlyOrg",
     "name": "EcoFriendly Organization",
     "summary": "Updated mission statement: Promoting sustainable living through community action"
   }
