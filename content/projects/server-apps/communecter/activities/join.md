@@ -73,3 +73,15 @@ In this example, **Yorre** sends a Join activity to indicate his intention to jo
   "instrument": "admin"
 }
 ```
+
+The `Join` activity can be used to request joining an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Join",
+  "actor": "https://communecter.org/api/activitypub/users/u/NewVolunteer",
+  "object": "https://communecter.org/api/activitypub/groups/g/CommunityOutreach"
+}
+```

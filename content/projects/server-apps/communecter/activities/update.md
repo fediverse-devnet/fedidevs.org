@@ -66,4 +66,40 @@ In this example, **Oceatoon**  modifies the details of a project he has created.
 }
 ```
 
+####  Modifying a Badge
+In this example, **Oceatoon**  modifies the details of a badge he has created.
+
+```json
+
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Update",
+  "object": "https://communecter.org/api/activitypub/object/id/652539d72a857",
+  "id": "https://communecter.org/api/activitypub/activity/id/649d514eba30c",
+  "actor": "https://communecter.org/api/activitypub/users/u/ArmelWanes",
+  "name": "Advanced Training Badge",
+  "description": "Updated description of the badge"
+}
+
+```
+
+The `Update` activity can be used to modify information about an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Update",
+  "actor": "https://communecter.org/api/activitypub/users/u/OrgManager",
+  "object": {
+    "type": "Organization",
+    "id": "https://communecter.org/api/activitypub/groups/g/EcoFriendlyOrg",
+    "name": "EcoFriendly Organization",
+    "summary": "Updated mission statement: Promoting sustainable living through community action"
+  }
+}
+```
+
 In all examples, the id field represents a unique identifier for the update activity, and the actor field contains the URL of the actor performing the update.
+
+

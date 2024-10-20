@@ -4,7 +4,7 @@ title: Create
 tags:
   - Create
 ---
-The `Create` activity is used to create new objects in Communecter, such as `Note`, `Event`, or `Project`.
+The `Create` activity is used to create new objects in Communecter, such as `Note`, `Event`, `Project`, or `Badge`.
 
 ### Reference
 
@@ -35,3 +35,58 @@ In this example, **Hajavololona** creates a new `Event` in Communecter and sends
     "https://instance.communecter.org/api/activitypub/users/u/ArmelWanes"
   ]
 }
+```
+
+## Example 2
+
+In this example, Hajavololona creates a new badge titled "Advanced Training Badge" in Communecter.
+
+```json
+
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Create",
+  "object": {
+    "type": "Badge",
+    "id": "https://communecter.org/api/activitypub/badge/id/12345",
+    "attachment": [
+      {
+        "type": "Image",
+        "url": "https://example.com/badge-image.jpg"
+      }
+    ],
+    "attributedTo": "https://communecter.org/api/activitypub/users/u/Hajavololona",
+    "content": "Earned for completing advanced training courses.",
+    "name": "Advanced Training Badge",
+    "published": "2023-07-02T10:15:00+0000",
+    "url": "https://example.com/badge-info"
+  },
+  "id": "https://communecter.org/api/activitypub/activity/id/649d514eba30c",
+  "actor": "https://communecter.org/api/activitypub/users/u/Hajavololona",
+  "published": "2023-07-02T10:15:00+0000",
+  "summary": "Created a new Badge: 'Advanced Training Badge'",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://instance.communecter.org/api/activitypub/users/u/ArmelWanes"
+  ]
+}
+
+```
+
+The `Create` activity can be used to create a new organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Create",
+  "actor": "https://communecter.org/api/activitypub/users/u/JaneDoe",
+  "object": {
+    "type": "Organization",
+    "name": "Green Earth Initiative",
+    "summary": "A non-profit dedicated to environmental conservation"
+  }
+}
+```

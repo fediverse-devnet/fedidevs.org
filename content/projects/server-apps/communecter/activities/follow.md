@@ -37,3 +37,16 @@ In this example, **Alice** sends a follow activity to follow **Bob** on Communec
   "id": "https://communecter.org/api/activitypub/activity/id/Follow123",
   "actor": "https://communecter.org/api/activitypub/users/u/oceatoon"
 }
+
+
+The `Follow` activity can be used to follow an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Follow",
+  "actor": "https://communecter.org/api/activitypub/users/u/EnvironmentEnthusiast",
+  "object": "https://communecter.org/api/activitypub/groups/g/GreenEarthInitiative"
+}
+```
