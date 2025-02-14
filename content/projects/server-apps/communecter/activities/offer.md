@@ -36,3 +36,44 @@ In this example, **Oceatoon** sends an Offer activity to **Armel Wanes**, offeri
 }
 
 ```
+#### Offering a badge
+
+This Activity Action describes an `Offer` activity, involving the assignment of a `Badge` from ArmelWanes (actor) to Hajavololona (target).
+
+
+
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Offer",
+  "object": "https://communecter.local/api/activitypub/object/id/653f3c437f1db",
+  "id": "https://communecter.local/api/activitypub/activity/id/653f3f9de8d34",
+  "actor":  "https://communecter.org/api/activitypub/users/u/ArmelWanes",
+  "target": "https://communecter.org/api/activitypub/users/u/Hajavololona",
+  "instrument": {
+    "type": "Object",
+    "narrative": "This is a narrative describing the badge assignment activity.",
+    "attenteRecepteur": true
+  },
+  "published": "2023-10-30T05:31:09+0000",
+  "summary": "Hajavololona assign Community Meetup to"
+}
+
+```
+
+The `Offer` activity can be used to offer roles or responsibilities within an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Offer",
+  "actor": "https://communecter.org/api/activitypub/users/u/BoardMember",
+  "object": {
+    "type": "Role",
+    "name": "Treasurer"
+  },
+  "target": "https://communecter.org/api/activitypub/users/u/FinanceExpert",
+  "context": "https://communecter.org/api/activitypub/groups/g/NonProfitOrg"
+}
+```

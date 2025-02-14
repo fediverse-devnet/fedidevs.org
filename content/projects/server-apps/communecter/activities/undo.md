@@ -32,3 +32,21 @@ In this example, **Armel Wanes** sends an Undo activity to cancel a previous Acc
 }
 
 ```
+
+
+
+The `Undo` activity can be used to reverse previous actions related to organizations:
+
+Example (undoing a Follow):
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Undo",
+  "actor": "https://communecter.org/api/activitypub/users/u/ChangedMind",
+  "object": {
+    "type": "Follow",
+    "actor": "https://communecter.org/api/activitypub/users/u/ChangedMind",
+    "object": "https://communecter.org/api/activitypub/groups/g/LocalCharity"
+  }
+}
+```

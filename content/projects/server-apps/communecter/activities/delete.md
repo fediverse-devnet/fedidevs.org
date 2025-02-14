@@ -5,7 +5,7 @@ tags:
   - Delete
 ---
 
-The `Delete` activity is used to indicate the deletion of objects in Communecter, such as `Note`, `Event`, or `Project`.
+The `Delete` activity is used to indicate the deletion of objects in Communecter, such as `Note`, `Event`, `Project`, `Badge`.
 
 ### Reference
 
@@ -61,3 +61,18 @@ In this example, an object (such as a Note, Event, or Project) is deleted withou
 In both examples, the summary field provides a brief description of the deletion, such as "Armel Wanes has decided to withdraw his contribution from the 'EcoSmart Homes Initiative' project" or "Object has been deleted". This gives an overview of the deletion activity.
 
 In the summary field, you can specify a description of the deletion action. For example, "Armel Wanes has decided to withdraw his contribution from the 'EcoSmart Homes Initiative' project" or simply "Object has been deleted". This provides a summary of the deletion activity.
+
+
+## Delete
+
+The `Delete` activity can be used to remove an organization:
+
+Example:
+```json
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "type": "Delete",
+  "actor": "https://communecter.org/api/activitypub/users/u/AdminUser",
+  "object": "https://communecter.org/api/activitypub/groups/g/DissolvedOrg"
+}
+```
