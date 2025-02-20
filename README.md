@@ -36,7 +36,7 @@ Note that the [theme](https://github.com/fediverse-devnet/fedidevs-hugo-theme.gi
 Run:
 
 ```shell
-$ hugo serve
+$ hugo server
 ```
 
 Then go to `http://localhost:1313/` (actual port will be printed to the terminal).
