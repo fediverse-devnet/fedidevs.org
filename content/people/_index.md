@@ -18,4 +18,3 @@ up-to-date list (sorted alphabetically).
 | Matthias Pfefferle		| @pfefferle@mastodon.social		| https://notiz.blog								|
 | Sofía Aritz				| @sofiaritz@hachyderm.io			| https://sofiaritz.com								|
 | Tommi						| @tommi@pan.rent					| https://tommi.space								|
-| ?							| @funkwhale@social.funkwhale.audio	| https://dev.funkwhale.audio/funkwhale/funkwhale	|
