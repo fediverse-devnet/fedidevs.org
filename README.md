@@ -31,7 +31,7 @@ $ git clone --recurse-submodules https://github.com/fediverse-devnet/fedidevs.or
 $ cd fedidevs.org
 ```
 
-Note that the [theme](https://github.com/fediverse-devnet/fedidevs-hugo-theme.git) is a submodule, so you need to use `--recurse-submodules` to get it. If you do not, you'll likely see an error related to shortcode templates when you try to run the site.
+Note that the [theme](https://github.com/fediverse-devnet/fedidevs-hugo-theme.git) is a submodule, so you need to use `--recurse-submodules` to get it. If you do not, you'll likely see an error related to shortcode templates when you try to run the site. In this case, run `git submodule update --init --recursive` to synchronise the submodule content.
 
 Run:
 
@@ -57,9 +57,11 @@ This describes files below `content/`.
 
 * Front page: Welcome, overview
 
-* `best-practices/`: A collection of best practices that we consider useful. Not standards, but more tips and tricks how to best apply the standards to solve certain problems.
-
 * `notes/`: Notes from meetings
+
+* `people/`: A table listing those who have chosen to be involved and identified as moving the project forward. Note that this is not an exclusive list, and we welcome contributors!
+
+* `practices/`: A collection of practices that we consider useful. Not standards, but more tips and tricks how to best apply the standards to solve certain problems.
 
 * `projects/`: Contains all information about Fediverse software projects, further subdivided by category.
 
